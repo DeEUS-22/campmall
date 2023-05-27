@@ -15,4 +15,19 @@ public class MainController {
 		return "index";
 	}
 	
+	/**
+	 * header.do
+	 */
+	@RequestMapping(value="/header.do", method=RequestMethod.GET)
+	public String header() {
+		return "header";
+	}
+	
+	/**
+	 * footer.do
+	 */
+	@RequestMapping(value="/footer.do", method=RequestMethod.GET)
+	public String footer() {
+		return "footer";
+	}
 }
