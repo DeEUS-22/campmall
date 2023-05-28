@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>login</title>
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/login.css">
+<script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
 </head>
 <body>
 <!-------------------->
@@ -28,30 +30,27 @@
 	<section class="login">
 		<div class="login_inner">
 			<h2>LOGIN</h2>
-			<form action="${contextPath}/login" name="frmlogin" method="post">
+			<form name="loginForm" action="loginCheck.do" method="post">
 				<fieldset>
 					<legend>로그인 폼</legend>
 					<div class="input_box">
 						<p class="title">
 							<strong>이메일 주소</strong>
 						</p>
-						<input type="email" class="input_email"
-							placeholder="예) camp@campmall.com" name="email" required>
-						<p class="warning_email">이메일 주소를 정확하게 입력해주세요.</p>
+						<input type="email" name="email" id="email" class="input_email" placeholder="예) camp@campmall.com">
 					</div>
 					<div class="input_box">
 						<p class="title">
 							<strong>비밀번호</strong>
 						</p>
-						<input type="password" class="input_password" autocomplete="on"
-							name="pwd" required>
-						<p class="warning_password">영문, 숫자, 특수문자를 조합해서 입력해주세요. (8-16자)</p>
+						<input type="password" name="pwd" id="pwd" class="input_password">
 					</div>
-					<input type="submit" value="로그인" class="submit_login">
+					<button type="button" id="btnLogin" class="submit_login">로그인</button>
+					<button type="reset">다시쓰기</button>
 					<ul>
-						<li><a href="${contextPath}/signup/register.jsp">이메일 가입</a></li>
-						<li><a href="${contextPath}/login/find_email.jsp">이메일 찾기</a></li>
-						<li><a href="${contextPath}/login/find_pwd.jsp">비밀번호 찾기</a></li>
+						<li><a href="http://localhost:9000/campmall/signup/register.jsp">이메일 가입</a></li>
+						<li><a href="http://localhost:9000/campmall/login/find_email.jsp">이메일 찾기</a></li>
+						<li><a href="http://localhost:9000/campmall/login/find_pwd.jsp">비밀번호 찾기</a></li>
 					</ul>
 				</fieldset>
 			</form>
