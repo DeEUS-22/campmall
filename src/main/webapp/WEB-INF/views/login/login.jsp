@@ -8,6 +8,19 @@
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/login.css">
 <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
+<script>
+	let join_result = '${join_result}';
+	let login_result = '${login_result}';
+
+	if(login_result == 'fail'){
+		alert("아이디 또는 패스워드가 다릅니다. 다시 로그인해주세요");	
+	}
+	
+	if(join_result == 'ok'){
+		alert("회원가입에 성공하셨습니다.");
+	}
+	
+</script>
 </head>
 <body>
 <!-------------------->
