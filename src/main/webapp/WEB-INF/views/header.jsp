@@ -8,7 +8,7 @@
 <title>header</title>
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/header.css">
 <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
-<script src="http://localhost:9000/campmall/resources/js/header.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
 </head>
 <body>
 <!---------------------------------------------->
