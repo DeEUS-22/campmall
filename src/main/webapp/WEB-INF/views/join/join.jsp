@@ -96,13 +96,13 @@
 							<ul>
 								<li>
 									<p class="indent">
-										<label><input type="checkbox" name="condition">이용약관 동의</label>
+										<label><input type="checkbox" name="condition" value="Y">이용약관 동의</label>
 										<a href="#ex1" rel="modal:open">내용보기</a>
 									</p>
 								</li>
 								<li>
 									<p class="indent">
-										<label><input type="checkbox" name="agreement">개인정보 수집 및 이용 동의</label>
+										<label><input type="checkbox" name="agreement" value="Y">개인정보 수집 및 이용 동의</label>
 										<a href="#ex2" rel="modal:open">내용보기</a>
 									</p>
 								</li>
@@ -120,12 +120,12 @@
 							<ul>
 								<li>
 									<p class="indent">
-										<label><input type="checkbox">문자 메시지</label>
+										<label><input type="checkbox" name="mes" value="Y">문자 메시지</label>
 									</p>
 								</li>
 								<li>
 									<p class="indent">
-										<label><input type="checkbox">이메일</label>
+										<label><input type="checkbox" name="email2" value="Y">이메일</label>
 									</p>
 								</li>
 							</ul>
