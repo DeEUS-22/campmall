@@ -25,6 +25,13 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- service 객체 생성 -->
+	<beans:bean id="memberService"  class="com.campmall.service.MemberServiceImpl"></beans:bean>
+	
+	<!-- dao 객체 생성 :  -->
+	<beans:bean id="memberDao"  class="com.campmall.dao.CpmMemberDAO"></beans:bean>
+	
+	
 	<context:component-scan base-package="com.project.campmall" />
 	<context:component-scan base-package="com.campmall.controller" />
 	

@@ -16,7 +16,6 @@ public class CpmMemberDAO {
 	 * insert
 	 */
 	public int insert(CpmMemberVO vo) {
-		//sqlSession ��ü�� �޼ҵ带 ȣ���Ͽ� �������� ������
 		return sqlSession.insert("mapper.member.join", vo);
 	}//insert-end
 }
