@@ -18,4 +18,5 @@ public class LoginController {
 		mv.setViewName("/login/login");
 		return mv;
 	}
+	
 }
