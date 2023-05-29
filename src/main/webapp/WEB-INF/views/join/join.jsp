@@ -5,11 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
+<!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-
+<!-- Daum Postcode API -->
+<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/postcode.js"></script>
 <title>회원가입</title>
-
 </head>
 <body>
 <!-------------------->
@@ -53,16 +57,16 @@
 	<section class="register">
 		<div class="register_inner">
 			<h2>REGISTER</h2>
-			<form id="register_form" action="${contextPath}/register/addMember.do" method="post">
+			<form name="joinForm" action="joinCheck.do" method="post">
 				<fieldset>
 					<legend>회원가입 폼</legend>
 					<div class="input_box">
 						<p class="title"><strong>이메일<span class="red_star">*</span></strong></p>
-						<input type="text" name="email" class="input_email" placeholder="예) ocamall@gmail.com" required>
+						<input type="text" name="email" id="email" class="input_email" placeholder="예) ocamall@gmail.com">
 					</div>
 					<div class="input_box">
 						<p class="title"><strong>비밀번호<span class="red_star">*</span></strong></p>
-						<input type="password" name="pwd" class="input_password" autocomplete="on" placeholder="영어, 숫자, 특수문자 조합 8-16자">
+						<input type="password" name="pwd" id="pwd" class="input_password" autocomplete="on" placeholder="영어, 숫자, 특수문자 조합 8-16자">
 					</div>
 					<div class="input_box">
 						<p class="title"><strong>주소<span class="red_star">*</span></strong></p>
@@ -77,7 +81,7 @@
 					</div>
 					<div class="input_box">
 						<p class="title"><strong>이름<span class="red_star">*</span></strong></p>
-						<input type="text" name="name" id="member_name" class="input_name">
+						<input type="text" name="name" id="name" class="input_name">
 					</div>
 					<div class="agree">
 						<div class="essential">
@@ -92,13 +96,13 @@
 							<ul>
 								<li>
 									<p class="indent">
-										<label><input type="checkbox">이용약관 동의</label>
+										<label><input type="checkbox" name="condition">이용약관 동의</label>
 										<a href="#ex1" rel="modal:open">내용보기</a>
 									</p>
 								</li>
 								<li>
 									<p class="indent">
-										<label><input type="checkbox">개인정보 수집 및 이용 동의</label>
+										<label><input type="checkbox" name="agreement">개인정보 수집 및 이용 동의</label>
 										<a href="#ex2" rel="modal:open">내용보기</a>
 									</p>
 								</li>
