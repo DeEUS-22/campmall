@@ -1,0 +1,22 @@
+package com.campmall.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.campmall.vo.CpmMemberVO;
+
+@Repository
+public class CpmMemberDAO {
+	
+	@Autowired
+	private SqlSessionTemplate sqlSession;
+	
+	/**
+	 * insert
+	 */
+	public int insert(CpmMemberVO vo) {
+		//sqlSession ��ü�� �޼ҵ带 ȣ���Ͽ� �������� ������
+		return sqlSession.insert("mapper.member.join", vo);
+	}//insert-end
+}
