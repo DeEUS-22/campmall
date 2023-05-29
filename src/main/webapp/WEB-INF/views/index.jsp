@@ -19,6 +19,19 @@
 </script>
 </head>
 <body>
-	<h1>test</h1>
+<!-------------------->
+<!-- header Include -->
+<!-------------------->
+<iframe src="header.do" width="100%" height="160px" scrolling="no" frameborder=0 ></iframe>
+
+<!-------------------->
+<!----- content ------>
+<!-------------------->
+<h1>test</h1>
+	
+<!-------------------->
+<!-- footer Include -->
+<!-------------------->
+<iframe src="footer.do" width="100%" height="160px" scrolling="no" frameborder=0 ></iframe>	
 </body>
 </html>
