@@ -77,7 +77,7 @@
     <div class="banner">
       <div class="banner_slide">
         <a href="#">
-          <img src="${pageContext.request.contextPath}/image/event_0714.jpg" alt="#">
+          <img src="http://localhost:9000/campmall/resources/images/event_0714.jpg" alt="#">
         </a>
       </div>
     </div>  
@@ -86,73 +86,73 @@
         <ul class="clearfix">
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_12.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
               <p>듀랑고VR</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_01.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_01.png" alt="#">
               <p>텐트ㆍ타프</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_02.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_02.png" alt="#">
               <p>침낭ㆍ매트</p>
             </a>
           </li>
           <li>
             <a href="#">
-               <img src="${pageContext.request.contextPath}/image/main_category_icon_03.png" alt="#">
+               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_03.png" alt="#">
               <p>퍼니처</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_04.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_04.png" alt="#">
               <p>라이팅</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_05.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_05.png" alt="#">
               <p>화로ㆍBBQ</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_06.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
               <p>키친</p>
             </a>
           </li>
           <li>
             <a href="#">
-             <img src="${pageContext.request.contextPath}/image/main_category_icon_07.png" alt="#">
+             <img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
               <p>계절용품</p>
             </a>
           </li>
           <li>
             <a href="#">
-           <img src="${pageContext.request.contextPath}/image/main_category_icon_08.png" alt="#">
+           <img src="http://localhost:9000/campmall/resources/images/main_category_icon_08.png" alt="#">
               <p>스토리지</p>
             </a>
           </li>
           <li>
             <a href="#">
-             <img src="${pageContext.request.contextPath}/image/main_category_icon_09.png" alt="#">
+             <img src="http://localhost:9000/campmall/resources/images/main_category_icon_09.png" alt="#">
               <p>RV용품</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="${pageContext.request.contextPath}/image/main_category_icon_10.png" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_10.png" alt="#">
               <p>액세사리</p>
             </a>
           </li>
           <li>
             <a href="#">
-               <img src="${pageContext.request.contextPath}/image/main_category_icon_11.png" alt="#">
+               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_11.png" alt="#">
               <p>밀리터리</p>
             </a>
           </li>
@@ -166,7 +166,7 @@
         <ul class="clearfix">
           <li>
             <a href="product.html">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -176,7 +176,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -186,7 +186,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -196,7 +196,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -214,7 +214,7 @@
         <ul class="clearfix">
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -224,7 +224,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -234,7 +234,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -244,7 +244,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -262,7 +262,7 @@
         <ul class="clearfix">
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -272,7 +272,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -282,7 +282,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -292,7 +292,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240070027527.jpg" alt="#">
+              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
               <h3>듀랑고</h3>
               <p class="content">슬림가스스토브 #</p>
               <p class="price discount">100,000원</p>
@@ -310,7 +310,7 @@
         <ul class="clearfix">
           <li>
             <a href="#">
-              <img src="image/0240030006612.jpg" alt="">
+              <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="">
               <div class="content">
                 <p class="text">테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</p>
                 <p class="user">test</p>
@@ -319,7 +319,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240030006612.jpg" alt="">
+              <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="">
               <div class="content">
                 <p class="text">테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</p>
                 <p class="user">test</p>
@@ -328,7 +328,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240030006612.jpg" alt="">
+              <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="">
               <div class="content">
                 <p class="text">테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</p>
                 <p class="user">test</p>
@@ -337,7 +337,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240030006612.jpg" alt="">
+              <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="">
               <div class="content">
                 <p class="text">테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</p>
                 <p class="user">test</p>
@@ -346,7 +346,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="image/0240030006612.jpg" alt="">
+              <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="">
               <div class="content">
                 <p class="text">테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트</p>
                 <p class="user">test</p>
@@ -361,37 +361,37 @@
       <div class="marquee_inner">
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
         <div class="marquee-img">
           <a href="#">
-            <img src="image/brand_05_ocamall.jpg" alt="#">
+            <img src="http://localhost:9000/campmall/resources/images/brand_05_ocamall.jpg" alt="#">
           </a>
         </div>
       </div>
