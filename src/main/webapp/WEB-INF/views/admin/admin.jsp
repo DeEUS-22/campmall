@@ -35,7 +35,7 @@
 		<h3>게시판 관리</h3>
 	</div>
 	<div class="productbox">
-		<a href="admin_product/product.do">
+		<a href="admin/admin_product/admin_product_list.do">
 			<img src="http://localhost:9000/campmall/resources/images/admin-product.png" alt="상품 관리">
 		</a>
 		<h3>상품 관리</h3>
