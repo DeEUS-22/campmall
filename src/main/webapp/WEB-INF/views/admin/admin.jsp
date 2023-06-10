@@ -34,7 +34,7 @@
 	<section class="adminMain">
 		<article><a href="admin_user.do"><img src="http://localhost:9000/campmall/resources/images/admin-user.png" alt="회원 관리">회원 관리</a></article>
 		<article><a href="admin_notice.do"><img src="http://localhost:9000/campmall/resources/images/admin-notice.png" alt="게시판 관리">게시판 관리</a></article>
-		<article><a href="admin_product.do"><img src="http://localhost:9000/campmall/resources/images/admin-product.png" alt="상품 관리">상품 관리</a></article>
+		<article><a href="admin_product/product.do"><img src="http://localhost:9000/campmall/resources/images/admin-product.png" alt="상품 관리">상품 관리</a></article>
 	</section>
 </div>
 <!-------------------->

@@ -18,4 +18,17 @@ public class AdminController {
 		mv.setViewName("/admin/admin");
 		return mv;
 	}
+	
+	/**
+	 * admin_product.do
+	 */
+	@RequestMapping(value="/admin_product/product.do", method=RequestMethod.GET)
+	public ModelAndView admin_product(String auth) {
+		ModelAndView mv = new ModelAndView();
+		//mv.addObject("auth", auth);
+		mv.setViewName("/admin/admin_product/product");
+		return mv;
+	}
+	
+	
 }
