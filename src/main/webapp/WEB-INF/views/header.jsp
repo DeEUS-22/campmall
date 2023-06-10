@@ -14,7 +14,6 @@
 <!---------------------------------------------->
 <!--------------- header ----------------------->
 <!---------------------------------------------->
-<header>
 	<header>
 		<div class="top_menu">
 			<div class="top_menu_inner clearfix">
@@ -54,11 +53,10 @@
 		<div class="bottom_menu">
 			<div class="bottom_menu_inner">
 				<ul class="clearfix">
-					<li><a href="#"> <strong>베스트</strong>
-					</a></li>
-					<li><a href="#">신상품</a></li>
-					<li><a href="#">특가상품</a></li>
-					<li><a href="#">추천상품</a></li>
+					<li><a href="/campmall/product/best.do"> <strong>베스트</strong></a></li>
+					<li><a href="/campmall/product/new.do">신상품</a></li>
+					<li><a href="/campmall/product/special.do">특가상품</a></li>
+					<li><a href="/campmall/product/pick.do">추천상품</a></li>
 				</ul>
 			</div>
 		</div>

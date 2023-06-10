@@ -31,7 +31,7 @@
 <!-------------------->
 <!-- header Include -->
 <!-------------------->
-<jsp:include page="../../header.jsp"></jsp:include>
+<jsp:include page="../header.jsp"></jsp:include>
 
 <!-------------------->
 <!----- content ------>
@@ -337,7 +337,7 @@
 <!-------------------->
 <!-- footer Include -->
 <!-------------------->
-<jsp:include page="../../footer.jsp"></jsp:include>
+<jsp:include page="../footer.jsp"></jsp:include>
 
 </body>
 

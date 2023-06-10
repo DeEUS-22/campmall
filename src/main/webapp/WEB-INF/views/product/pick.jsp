@@ -32,7 +32,7 @@
 <!-------------------->
 <!-- header Include -->
 <!-------------------->
-<jsp:include page="../../header.jsp"></jsp:include>
+<jsp:include page="../header.jsp"></jsp:include>
 
 <!-------------------->
 <!----- content ------>
@@ -49,8 +49,6 @@
         d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
     </svg>
   </div>
-
-
 
   <div class="container">
     <div class="category">
@@ -135,7 +133,7 @@
     <section class="item">
       <div class="item_inner">
         <div class="top_area">
-          <h2>SPECIAL PRICE ITEMS</h2>
+          <h2>MD'S PICK ITEMS</h2>
           <select>
             <option>상품정렬</option>
             <option>낮은가격</option>
@@ -339,7 +337,8 @@
 <!-------------------->
 <!-- footer Include -->
 <!-------------------->
-<jsp:include page="../../footer.jsp"></jsp:include>
+<jsp:include page="../footer.jsp"></jsp:include>
+
 </body>
 
 </html>

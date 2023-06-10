@@ -24,7 +24,7 @@
 
   <!-- js -->
   <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.4.min.js"></script>
-  <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
+  <script src="http://localhost:9000/campmall/resources/js/header.js"></script>
   <script src="http://localhost:9000/campmall/resources/js/animation.js"></script>
 </head>
 
@@ -32,80 +32,86 @@
 <!-------------------->
 <!-- header Include -->
 <!-------------------->
-<jsp:include page="../../header.jsp"></jsp:include>
+<jsp:include page="../header.jsp"></jsp:include>
 
 <!-------------------->
 <!----- content ------>
 <!-------------------->
-<div class="arrow">
-	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill arrow-up" viewBox="0 0 16 16">
-		<path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-	</svg>
-	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill arrow-down" viewBox="0 0 16 16">
-		<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-	</svg>
-</div>
+  <div class="arrow">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-caret-up-fill arrow-up" viewBox="0 0 16 16">
+      <path
+        d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      class="bi bi-caret-down-fill arrow-down" viewBox="0 0 16 16">
+      <path
+        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+    </svg>
+  </div>
 
-<div class="container">
-	<div class="category">
-		<div class="category_inner">
-			<ul class="clearfix">
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
-						<p>듀랑고VR</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_01.png" alt="#">
-						<p>텐트ㆍ타프</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_02.png" alt="#">
-						<p>침낭ㆍ매트</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_03.png" alt="#">
-						<p>퍼니처</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_04.png" alt="#">
-						<p>라이팅</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_05.png" alt="#">
-						<p>화로ㆍBBQ</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
-						<p>키친</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
-						<p>계절용품</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_08.png" alt="#">
-						<p>스토리지</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
+
+
+  <div class="container">
+    <div class="category">
+      <div class="category_inner">
+        <ul class="clearfix">
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
+              <p>듀랑고VR</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_01.png" alt="#">
+              <p>텐트ㆍ타프</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_02.png" alt="#">
+              <p>침낭ㆍ매트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_03.png" alt="#">
+              <p>퍼니처</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_04.png" alt="#">
+              <p>라이팅</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_05.png" alt="#">
+              <p>화로ㆍBBQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
+              <p>키친</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
+              <p>계절용품</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_08.png" alt="#">
+              <p>스토리지</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_09.png" alt="#">
               <p>RV용품</p>
             </a>
@@ -129,7 +135,7 @@
     <section class="item">
       <div class="item_inner">
         <div class="top_area">
-          <h2>NEW ITEMS</h2>
+          <h2>SPECIAL PRICE ITEMS</h2>
           <select>
             <option>상품정렬</option>
             <option>낮은가격</option>
@@ -319,8 +325,10 @@
         <li><a href="#">5</a></li>
         <li class="paging_right">
           <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
             </svg>
           </a>
         </li>
@@ -331,7 +339,7 @@
 <!-------------------->
 <!-- footer Include -->
 <!-------------------->
-<jsp:include page="../../footer.jsp"></jsp:include>
+<jsp:include page="../footer.jsp"></jsp:include>
 </body>
 
 </html>
