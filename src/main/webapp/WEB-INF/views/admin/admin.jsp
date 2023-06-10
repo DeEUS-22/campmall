@@ -21,21 +21,25 @@
 <!-------------------->
 <!----- content ------>
 <!-------------------->
-<div class="arrow">
-	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill arrow-up" viewBox="0 0 16 16">
-		<path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
-	</svg>
-	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill arrow-down" viewBox="0 0 16 16">
-		<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-	</svg>
-</div>
-<div class="content">
-	<h1>관리자 페이지</h1>	
-	<section class="adminMain">
-		<article><a href="admin_user.do"><img src="http://localhost:9000/campmall/resources/images/admin-user.png" alt="회원 관리">회원 관리</a></article>
-		<article><a href="admin_notice.do"><img src="http://localhost:9000/campmall/resources/images/admin-notice.png" alt="게시판 관리">게시판 관리</a></article>
-		<article><a href="admin_product/product.do"><img src="http://localhost:9000/campmall/resources/images/admin-product.png" alt="상품 관리">상품 관리</a></article>
-	</section>
+<div class="admin-container">
+	<div class="userbox">
+		<a href="#">
+			<img src="http://localhost:9000/campmall/resources/images/admin-user.png" alt="회원 관리">
+		</a>
+		<h3>회원 관리</h3>
+	</div>
+	<div class="noticebox">
+		<a href="#">
+			<img src="http://localhost:9000/campmall/resources/images/admin-notice.png" alt="게시판 관리">
+		</a>
+		<h3>게시판 관리</h3>
+	</div>
+	<div class="productbox">
+		<a href="admin_product/product.do">
+			<img src="http://localhost:9000/campmall/resources/images/admin-product.png" alt="상품 관리">
+		</a>
+		<h3>상품 관리</h3>
+	</div>
 </div>
 <!-------------------->
 <!-- footer Include -->

@@ -17,18 +17,26 @@
 
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="${contextPath}/css/reset.css">
-  <link rel="stylesheet" href="${contextPath}/css/header.css">
-  <link rel="stylesheet" href="${contextPath}/css/footer.css">
-  <link rel="stylesheet" href="${contextPath}/css/product.css">
+  <link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/admin.css">
+  <link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/header.css">
+  <link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/footer.css">
+  <link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/product.css">
 
   <!-- js -->
-  <script src="${contextPath}/js/jquery-3.6.4.min.js"></script>
-  <script src="${contextPath}/js/header.js"></script>
-  <script src="${contextPath}/js/animation.js"></script>
+  <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.4.min.js"></script>
+  <script src="http://localhost:9000/campmall/resources/js/header.js"></script>
+  <script src="http://localhost:9000/campmall/resources/js/animation.js"></script>
 </head>
 
 <body>
+<!-------------------->
+<!-- header Include -->
+<!-------------------->
+<jsp:include page="../../header.jsp"></jsp:include>
+
+<!-------------------->
+<!----- content ------>
+<!-------------------->
 <div class="arrow">
 	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill arrow-up" viewBox="0 0 16 16">
 		<path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
@@ -37,7 +45,7 @@
 		<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
 	</svg>
 </div>
-<jsp:include page="../header.do"></jsp:include>
+
 
 
 <div class="container">
@@ -93,7 +101,7 @@
         </ul>
       </div>
       <div class="product_image">
-        <img src="image/air_300_06.jpg" alt="#">
+        <img src="http://localhost:9000/campmall/resources/images/air_300_06.jpg" alt="#">
       </div>
 
       <div id="second" class="product_menu">
@@ -135,7 +143,7 @@
             <tr>
               <td>10</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -147,7 +155,7 @@
             <tr>
               <td>9</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -159,7 +167,7 @@
             <tr>
               <td>8</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -171,7 +179,7 @@
             <tr>
               <td>7</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -183,7 +191,7 @@
             <tr>
               <td>6</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -195,7 +203,7 @@
             <tr>
               <td>5</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -207,7 +215,7 @@
             <tr>
               <td>4</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -219,7 +227,7 @@
             <tr>
               <td>3</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -231,7 +239,7 @@
             <tr>
               <td>2</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -243,7 +251,7 @@
             <tr>
               <td>1</td>
               <td class="td_img">
-                <img src="image/0240030006612.jpg" alt="#">
+                <img src="http://localhost:9000/campmall/resources/images/0240030006612.jpg" alt="#">
               </td>
               <td class="left">
                 <a href="#">리뷰 제목입니다.</a>
@@ -356,8 +364,11 @@
     </div>
   </section>
 </div>
-<jsp:include page="../common/footer.jsp"></jsp:include>
 
+<!-------------------->
+<!-- footer Include -->
+<!-------------------->
+<jsp:include page="../../footer.jsp"></jsp:include>
 
 </body>
 
