@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.campmall.vo.CpmProductVO;
+
 @Controller
 public class AdminController {
 
@@ -38,6 +40,24 @@ public class AdminController {
 		ModelAndView mv = new ModelAndView();
 		//mv.addObject("auth", auth);
 		mv.setViewName("/admin/admin_product/admin_product_write");
+		return mv;
+	}
+	
+	@RequestMapping(value="/prdWrite.do", method=RequestMethod.POST)
+	public ModelAndView prdWrite(CpmProductVO vo) {
+		ModelAndView mv = new ModelAndView();
+		
+		int result = memberService.getJoinResult(vo);
+		
+		
+		if(result == 1){
+			mv.addObject("save_result","ok");
+			mv.setViewName("/admin/admin_product/admin_product_list");
+		}else{
+			mv.setViewName("errorPage");
+		}
+		
+		
 		return mv;
 	}
 	

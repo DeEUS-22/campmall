@@ -21,9 +21,18 @@
 		padding-left: 7rem;
 	}
 	/* 입력창 */
-	
+	.container.py-4{
+		margin:0 auto;
+		width: 503px;
+	}
+	/* 가입하기 */
+	.d-grid.gap-2{
+		padding-top: 30px;
+		justify-content: center;
+	}
 </style>
-
+<script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
 </head>
 <body>
 <!-------------------->
@@ -106,7 +115,7 @@
 -->
 <section class="bg-light">
 	<div id="contents" class="container py-4">
-		<form id="#" method="post" action="#" enctype="multipart/form-data">
+		<form id="prdForm" method="post" action="prdWrite.do" enctype="multipart/form-data">
 			<div class="form-group">
 				<span class="text-dark h4">상품등록</span>
 			</div>
@@ -128,7 +137,7 @@
 			
 			<div class="form-group">
 				<label calss="form-label mt-4">카테고리</label>
-				<select id="category" class=" form-control">
+				<select id="category" class="form-control">
 					<option value="default">선택</option>
 					<option value="vr">듀랑고VR</option>
 					<option value="tent">텐트-타프</option>
@@ -155,27 +164,27 @@
 			</div>
 			<div class="form-group">
 				<label for="price" class="form-label mt-4">정상가(원)</label>
-				<input type="text" id="price" name="price" class="form-control" placeholder="정상가를 입력해주세요">
+				<input type="number" id="price" step="500" name="price" class="form-control" placeholder="정상가를 입력해주세요">
 			</div>
 			<div class="form-group">
 				<label for="dc" class="form-label mt-4">할인률(%)</label>
-				<input type="text" id="dc" name="dc" class="form-control" placeholder="할인률을 입력해주세요">
+				<input type="number" id="dc" name="dc" class="form-control" placeholder="할인률을 입력해주세요">
 			</div>
 			<div class="form-group">
 				<label for="sale" class="form-label mt-4">판매가(원)</label>
-				<input type="text" id="sale" name="sale" class="form-control" value="" readonly>
+				<input type="number" id="sale" name="sale" class="form-control" value="" readonly>
 			</div>
 			<div class="form-group">
 				<label for="stock" class="form-label mt-4">재고</label>
-				<input type="text" id="stock" name="stock" class="form-control" placeholder="재고를 입력해주세요">
+				<input type="number" id="stock" name="stock" class="form-control" placeholder="재고를 입력해주세요">
 			</div>
 			<div class="form-group">
-				<p>분류</p>
-				<div>
-					<input type="radio" name="event" id="best" value="best"><label for="best">베스트</label>
-					<input type="radio" name="event" id="new" value="new"><label for="new">신상품</label>
-					<input type="radio" name="event" id="special" value="special"><label for="special">특가상품</label>
-					<input type="radio" name="event" id="pick" value="pick"><label for="pick">추천상품</label>
+				<label class="form-label mt-4">분류</label>
+				<div class="form-check">
+					<input type="radio" name="event" id="best" value="best" class="form-check-input"><label for="best" class="form-check-label" style="margin-right:25px;">베스트</label>
+					<input type="radio" name="event" id="new" value="new" class="form-check-input" checked><label for="new" class="form-check-label" style="margin-right:25px;">신상품</label>
+					<input type="radio" name="event" id="special" value="special" class="form-check-input"><label for="special" class="form-check-label" style="margin-right:25px;">특가상품</label>
+					<input type="radio" name="event" id="pick" value="pick" class="form-check-input"><label for="pick" class="form-check-label" style="margin-right:25px;">추천상품</label>
 				</div>
 			</div>
 		</form>

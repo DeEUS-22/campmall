@@ -79,4 +79,10 @@ $(document).ready(function(){
 		}
 	}); //click()-end
 	
+	/*********************
+		상품등록 유효성 체크
+	**********************/
+	$("#prdSave").click(function(){
+		prdForm.submit();
+	}); //click()-end
 }); 
