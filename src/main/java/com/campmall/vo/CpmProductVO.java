@@ -2,8 +2,15 @@ package com.campmall.vo;
 
 public class CpmProductVO {
 	int pid, price, dc, sale, stock;
-	String category, prdnm, brdnm;
- int getPid() {
+	String category, prdNm, brdNm, event;
+	
+	public String getEvent() {
+		return event;
+	}
+	public void setEvent(String event) {
+		this.event = event;
+	}
+	public int getPid() {
 		return pid;
 	}
 	public void setPid(int pid) {
@@ -39,16 +46,17 @@ public class CpmProductVO {
 	public void setCategory(String category) {
 		this.category = category;
 	}
-	public String getPrdnm() {
-		return prdnm;
+	public String getPrdNm() {
+		return prdNm;
 	}
-	public void setPrdnm(String prdnm) {
-		this.prdnm = prdnm;
+	public void setPrdNm(String prdNm) {
+		this.prdNm = prdNm;
 	}
-	public String getBrdnm() {
-		return brdnm;
+	public String getBrdNm() {
+		return brdNm;
 	}
-	public void setBrdnm(String brdnm) {
-		this.brdnm = brdnm;
+	public void setBrdNm(String brdNm) {
+		this.brdNm = brdNm;
 	}
+ 
 }

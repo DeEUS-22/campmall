@@ -115,7 +115,7 @@
 -->
 <section class="bg-light">
 	<div id="contents" class="container py-4">
-		<form id="prdForm" method="post" action="prdWrite.do" enctype="multipart/form-data">
+		<form id="prdForm" method="post" action="prdWrite.do">
 			<div class="form-group">
 				<span class="text-dark h4">상품등록</span>
 			</div>
@@ -137,7 +137,7 @@
 			
 			<div class="form-group">
 				<label calss="form-label mt-4">카테고리</label>
-				<select id="category" class="form-control">
+				<select id="category" name="category" class="form-control">
 					<option value="default">선택</option>
 					<option value="vr">듀랑고VR</option>
 					<option value="tent">텐트-타프</option>

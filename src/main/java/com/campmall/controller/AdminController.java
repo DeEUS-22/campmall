@@ -1,5 +1,7 @@
 package com.campmall.controller;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,9 +32,11 @@ public class AdminController {
 	 * admin_product_list.do : 상품 목록 호출
 	 */
 	@RequestMapping(value="/admin_product_list.do", method=RequestMethod.GET)
-	public ModelAndView adminProductList(String auth) {
+	public ModelAndView adminProductList() {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
+
+		ArrayList<CpmProductVO> list = productService.getList(); 
+		
 		mv.setViewName("/admin/admin_product/admin_product_list");
 		return mv;
 	}
