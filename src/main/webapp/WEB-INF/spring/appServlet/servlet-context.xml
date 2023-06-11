@@ -27,9 +27,11 @@
 	
 	<!-- service 객체 생성 -->
 	<beans:bean id="memberService"  class="com.campmall.service.MemberServiceImpl"></beans:bean>
+	<beans:bean id="productService"  class="com.campmall.service.ProductServiceImpl"></beans:bean>
 	
 	<!-- dao 객체 생성 :  -->
 	<beans:bean id="memberDao"  class="com.campmall.dao.CpmMemberDAO"></beans:bean>
+	<beans:bean id="productDao"  class="com.campmall.dao.CpmProductDAO"></beans:bean>
 	
 	
 	<context:component-scan base-package="com.project.campmall" />
