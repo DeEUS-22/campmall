@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ProductController {
 	
 	/**
-	 * admin_product.do
+	 * product.do : 상품 상세 정보
 	 */
 	@RequestMapping(value="/product/product.do", method=RequestMethod.GET)
 	public ModelAndView product(String auth) {
@@ -20,7 +20,7 @@ public class ProductController {
 	}
 	
 	/**
-	 * admin_product.do
+	 * special.do : 특가상품
 	 */
 	@RequestMapping(value="/product/special.do", method=RequestMethod.GET)
 	public ModelAndView special(String auth) {
@@ -31,7 +31,7 @@ public class ProductController {
 	}
 	
 	/**
-	 * admin_product.do
+	 * best.do : 베스트 상품
 	 */
 	@RequestMapping(value="/product/best.do", method=RequestMethod.GET)
 	public ModelAndView best(String auth) {
@@ -42,7 +42,7 @@ public class ProductController {
 	}
 	
 	/**
-	 * admin_product.do
+	 * new.do : 신상품
 	 */
 	@RequestMapping(value="/product/new.do", method=RequestMethod.GET)
 	public ModelAndView new_product(String auth) {
@@ -53,7 +53,7 @@ public class ProductController {
 	}
 	
 	/**
-	 * admin_product.do
+	 * pick.do : 추천상품
 	 */
 	@RequestMapping(value="/product/pick.do", method=RequestMethod.GET)
 	public ModelAndView pick(String auth) {

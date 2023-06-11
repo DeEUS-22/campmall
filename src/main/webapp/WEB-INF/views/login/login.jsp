@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>login</title>
+<link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/admin.css">
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/login.css">
 <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
@@ -43,7 +44,6 @@
 		<div class="login_inner">
 			<h2>LOGIN</h2>
 			<form name="loginForm" action="loginCheck.do" method="post">
-				<h1>로그인</h1>
 				<div class="input_box">
 					<p class="title">
 						<strong>이메일 주소</strong>

@@ -22,7 +22,7 @@ public class AdminController {
 	/**
 	 * admin_product_list.do : 상품 목록 호출
 	 */
-	@RequestMapping(value="/admin/admin_product/admin_product_list.do", method=RequestMethod.GET)
+	@RequestMapping(value="/admin_product_list.do", method=RequestMethod.GET)
 	public ModelAndView adminProductList(String auth) {
 		ModelAndView mv = new ModelAndView();
 		//mv.addObject("auth", auth);

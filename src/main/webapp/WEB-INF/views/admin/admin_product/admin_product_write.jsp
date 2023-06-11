@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>상품등록</title>
+<link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/admin.css">
 </head>
 <body>
 <!-------------------->
@@ -55,25 +56,30 @@
 		
 		<p>정상가</p>
 		<input type="text" id="price" name="price" value="${prdView.price}" placeholder="정상가를 입력해주세요">
+		<span>원</span>
 		
 		<p>할인률</p>
 		<input type="text" id="dc" name="dc" value="${prdView.dc}" placeholder="할인률을 입력해주세요">
+		<span>%</span>
 		
-		<p>행사가</p>
+		<p>판매가</p>
 		<input type="text" id="sale" name="sale" value="" readonly>
+		<span>원</span>
 		
-		<p>이벤트</p>
-		<select id="event" >
-			<option value="default">선택</option>
-			<option value="best">베스트</option>
-			<option value="new">신상품</option>
-			<option value="special">특가상품</option>
-			<option value="pick">추천상품</option>
-		</select>
+		<p>재고</p>
+		<input type="text" id="stock" name="stock" value="">
 		
+		<p>분류</p>
+		<div>
+			<input type="radio" name="event" id="best" value="best"><label for="best">베스트</label>
+			<input type="radio" name="event" id="new" value="new"><label for="new">신상품</label>
+			<input type="radio" name="event" id="special" value="special"><label for="special">특가상품</label>
+			<input type="radio" name="event" id="pick" value="pick"><label for="pick">추천상품</label>
+		</div>
 	</form>
 	
 	<button type="button" id="prdSave" class="btn_bottom">등록하기</button>
+	<button type="reset" class="btn_member">다시입력</button>
 	
 </div>
 <!-------------------->

@@ -9,6 +9,7 @@
 <link rel="stylesheet"  href="http://localhost:9000/model2_cgv/resources/css/am-pagination.css">
 <script src="http://localhost:9000/model2_cgv/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://localhost:9000/model2_cgv/resources/js/am-pagination.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 </head>
 <body>
 <!-------------------->
@@ -21,14 +22,19 @@
 <!-------------------->
 <div class="content">
 	<h1>상품리스트</h1>
-	<table class="board">
-		<tr>
+	<div>
+		<a href="/campmall/admin_product_write.do">
+			<button type="button" class="btn_style">상품등록</button>
+		</a>
+	</div>
+	<table class="table table-hover table-bordered table-striped text-center">
+		<!-- <tr>
 			<td colspan="4">
 				<a href="/campmall/admin_product_write.do">
 				<button type="button" class="btn_style">상품등록</button>
 				</a>
 			</td>
-		</tr>
+		</tr> -->
 		<tr>
 			<th>번호</th>
 			<th>카테고리</th>
@@ -57,10 +63,11 @@
 			<td>18,000</td>
 			<td>23/03/04</td>
 		</tr>
-		<tr>
-			<td colspan="4"><div id="ampaginationsm"></div></td>
-		</tr>
-	</table>	
+		<!-- <tr>
+			<td colspan="8"><div id="ampaginationsm"></div></td>
+		</tr> -->
+	</table>
+	<div id="ampaginationsm"></div>
 </div>
 <!-------------------->
 <!-- footer Include -->
