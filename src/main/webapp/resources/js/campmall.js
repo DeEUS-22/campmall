@@ -35,6 +35,7 @@ $(document).ready(function(){
 		}
 	});
 	
+	
 	/*********************
 		회원가입 폼 유효성 체크
 	**********************/
@@ -79,10 +80,37 @@ $(document).ready(function(){
 		}
 	}); //click()-end
 	
+	
 	/*********************
 		상품등록 유효성 체크
 	**********************/
 	$("#prdSave").click(function(){
 		prdForm.submit();
 	}); //click()-end
+	
+	
+	/*********************
+		할인률 계산
+	*********************/
+	
+	var test = "";
+	var test2 = "";
+	var test3 = "";
+	
+	$("#price").keyup(function(e){
+		test = $("#price").val();
+		test = Number(test);
+		test3 = (test * test2)/100;
+		$("#sale").val(test3);
+	});
+	
+	$("#dc").keyup(function(e){
+		test2 = $("#dc").val();
+		test2 = Number(test2);
+		test3 = test * (1-test2/100);
+		$("#sale").val(test3);
+	});
+	
+	
+	
 }); 

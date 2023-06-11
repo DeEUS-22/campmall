@@ -200,4 +200,28 @@
 <!-------------------->
 <jsp:include page="../../footer.jsp"></jsp:include>
 </body>
+<!-- <script>
+	var test = "";
+	var test2 = "";
+	var test3 = "";
+	console.log("test값: " + test);
+	
+	$("#price").keyup(function(e){
+		test = $("#price").val();
+		test = Number(test);
+		test3 = (test * test2)/100;
+		$("#sale").val(test3);
+		console.log("test값: " + test);
+	});
+	
+	$("#dc").keyup(function(e){
+		test2 = $("#dc").val();
+		test2 = Number(test2);
+		test3 = (test * test2)/100;
+		$("#sale").val(test3);
+		console.log("test2값: " + test2);
+	});
+	
+	
+</script> -->
 </html>

@@ -1,15 +1,20 @@
 package com.campmall.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.campmall.service.ProductServiceImpl;
 import com.campmall.vo.CpmProductVO;
 
 @Controller
 public class AdminController {
 
+	@Autowired
+	private ProductServiceImpl productService;
+	
 	/**
 	 * admin.do : 관리자 페이지 호출
 	 */
@@ -47,7 +52,7 @@ public class AdminController {
 	public ModelAndView prdWrite(CpmProductVO vo) {
 		ModelAndView mv = new ModelAndView();
 		
-		int result = memberService.getJoinResult(vo);
+		int result = productService.getSaveResult(vo);
 		
 		
 		if(result == 1){
