@@ -24,7 +24,7 @@
 		<form id="prdUpdateForm" method="post" action="prdUpdate.do">
 			<input type="hidden" name="pid"  value="${vo.pid}" >
 			<div class="form-group">
-				<span class="text-dark h4">상품수정</span>
+				<span class="text-dark h4">상품 상세설명</span>
 			</div>
 			
 			<div class="form-group">

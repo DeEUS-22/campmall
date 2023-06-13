@@ -50,7 +50,7 @@ $(document).ready(function(){
 <!----- content ------>
 <!-------------------->
 <div class="content">
-	<h1>상품리스트</h1>
+	<h1>상품목록</h1>
 	<div>
 		<a href="/campmall/admin_product_write.do">
 			<button type="button" class="btn_style" style="margin:0 30px 30px 0; float:right;">상품등록</button>

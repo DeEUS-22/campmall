@@ -69,7 +69,7 @@
 			<li>
 				<button type="submit" class="btn_style">삭제완료</button>					
 				<a href="/campmall/admin_product_update.do?pid=${pid}"><button type="button" class="btn_style">이전페이지</button></a>
-				<a href="/campmall/admin_product_list.do"><button type="button" class="btn_style">리스트</button></a>
+				<a href="/campmall/admin_product_list.do"><button type="button" class="btn_style">목록보기</button></a>
 			</li>
 		</ul>
 	</form>
