@@ -2,13 +2,8 @@
     pageEncoding="UTF-8"
     isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
-<%
-   request.setCharacterEncoding("utf-8");
-%>
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -151,6 +146,19 @@
               <p class="percent">10%</p>
             </a>
           </li>
+          <c:forEach var="vo"  items="${list}">
+			<li>
+				<a href="#">
+	              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
+	              <h3>듀랑고</h3>
+	              <p class="content">슬림가스스토브 #</p>
+	              <p class="price discount">100,000원</p>
+	              <p class="price">100,000원</p>
+	              <p class="percent">10%</p>
+	            </a>
+			</li>
+			</c:forEach>
+          
         </ul>
       </div>
     </section>

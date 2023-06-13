@@ -97,7 +97,6 @@
 		</form>
 			<div class="d-grid gap-2">
 				<button type="submit" id="prdUpdate" class="btn btn-primary btn-lg">수정하기</button>
-				<button type="reset" class="btn btn-primary btn-lg">다시입력</button>
 				<a href="/campmall/admin_product_delete.do?pid=${vo.pid }"><button type="button" class="btn btn-primary btn-lg">삭제하기</button></a>
 				<a href="/campmall/admin_product_list.do"><button type="button" class="btn btn-primary btn-lg">목록보기</button></a>
 			</div>
