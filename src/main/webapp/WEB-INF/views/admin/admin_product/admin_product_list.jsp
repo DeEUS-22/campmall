@@ -84,7 +84,7 @@ $(document).ready(function(){
 		<tr>
 			<td>${vo.rno }</td>
 			<td>${vo.category }</td>
-			<td><a href="/campmall/admin_product_update.do">${vo.prdNm}</a></td>
+			<td><a href="/campmall/admin_product_update.do?pid=${vo.pid}">${vo.prdNm}</a></td>
 			<td>${vo.brdNm }</td>
 			<td>${vo.price }</td>
 			<td>${vo.dc }</td>

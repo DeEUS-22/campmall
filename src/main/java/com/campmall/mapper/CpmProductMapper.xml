@@ -14,7 +14,24 @@
 	
 	<!-- product list -->
 	<select id="list" resultType="com.campmall.vo.CpmProductVO">
-		select rownum rno, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product
+		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product
 	</select>
+	
+	<!-- product content -->
+	<select id="content" parameterType="java.lang.String" resultType="com.campmall.vo.CpmProductVO">
+		select pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate
+		 from cpm_product  where pid=#{pid}
+	</select>
+	
+	<!-- product update -->
+	<update id="update" parameterType="com.campmall.vo.CpmProductVO">
+		update cpm_product set category=#{category}, prdNm=#{prdNm}, brdNm=#{brdNm}, price=#{price}, dc=#{dc}, sale=#{sale}, stock=#{stock}, event=#{event} 
+		 where pid=#{pid}
+	</update> 
+	
+	<!-- board delete -->
+	<delete id="delete" parameterType="java.lang.String">
+		delete from cpm_product where pid=#{pid}
+	</delete>
 	
 </mapper>

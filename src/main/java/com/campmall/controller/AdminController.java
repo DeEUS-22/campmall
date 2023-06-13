@@ -2,6 +2,8 @@ package com.campmall.controller;
 
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -72,24 +74,41 @@ public class AdminController {
 	}
 	
 	/**
-	 * admin_product_content.do : 상품 상세정보
+	 * admin_product_update.do : 상품 수정
 	 */
-	@RequestMapping(value="/admin_product_content.do", method=RequestMethod.GET)
-	public ModelAndView adminProductContent(String auth) {
+	@RequestMapping(value="/admin_product_update.do", method=RequestMethod.GET)
+	public ModelAndView adminProductUpdate(String pid) {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
-		mv.setViewName("/admin/admin_product/admin_product_content");
+		CpmProductVO vo = productService.getContent(pid);
+		
+		mv.addObject("vo", vo);
+		mv.setViewName("/admin/admin_product/admin_product_update");
+		
 		return mv;
 	}
 	
 	/**
-	 * admin_product_update.do : 상품 수정
+	 * prdUpdate.do : 상품 수정
 	 */
-	@RequestMapping(value="/admin_product_update.do", method=RequestMethod.GET)
-	public ModelAndView adminProductUpdate(String auth) {
+	@RequestMapping(value="/prdUpdate.do", method=RequestMethod.POST)
+	public ModelAndView prdUpdate(CpmProductVO vo, HttpServletRequest request) throws Exception {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
-		mv.setViewName("/admin/admin_product/admin_product_update");
+		
+		//String old_filename = vo.getNsfile();	//����ȭ�鿡�� hidden���� �Ѿ���� ���� upload ������ ����� ���ϸ�
+		
+		//vo = fileService.update_fileCheck(vo);
+		
+		int result = productService.getUpdate(vo);
+		
+		if(result == 1){
+			//fileService.update_filesave(vo, request, old_filename);
+		
+			mv.setViewName("redirect:/admin_product_list.do");
+		}else{
+		
+			mv.setViewName("errorPage");
+		}		
+		
 		return mv;
 	}
 	
@@ -97,10 +116,26 @@ public class AdminController {
 	 * admin_product_delete.do : 상품 삭제
 	 */
 	@RequestMapping(value="/admin_product_delete.do", method=RequestMethod.GET)
-	public ModelAndView adminProductDelete(String auth) {
+	public ModelAndView adminProductDelete(String pid) {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
+		mv.addObject("pid", pid);
 		mv.setViewName("/admin/admin_product/admin_product_delete");
+		return mv;
+	}
+	
+	/**
+	 * prdDelete.do : 상품 삭제
+	 */
+	@RequestMapping(value="/prdDelete.do", method=RequestMethod.POST)
+	public ModelAndView prdDelete(String pid, HttpServletRequest request) throws Exception {
+		ModelAndView mv = new ModelAndView();
+		
+		int result = productService.getDelete(pid);
+		
+		if(result == 1) {
+			mv.setViewName("redirect:/admin_product_list.do");
+		}
+		
 		return mv;
 	}
 }

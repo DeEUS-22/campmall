@@ -8,4 +8,7 @@ public interface ProductService {
 
 	int getSaveResult(CpmProductVO vo);
 	ArrayList<CpmProductVO> getList();
+	CpmProductVO getContent(String pid);
+	int getUpdate(CpmProductVO vo);	
+	int getDelete(String bid);
 }

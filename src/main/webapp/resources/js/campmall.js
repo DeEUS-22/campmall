@@ -111,6 +111,13 @@ $(document).ready(function(){
 		$("#sale").val(test3);
 	});
 	
+	/*********************
+		게시판 수정폼 유효성 체크
+	**********************/
 	
+	$("#prdUpdate").click(()=>{
+		//서버전송
+		prdUpdateForm.submit();
+	});
 	
 }); 

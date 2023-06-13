@@ -2,8 +2,14 @@ package com.campmall.vo;
 
 public class CpmProductVO {
 	int rno, price, dc, sale, stock;
-	String category, prdNm, brdNm, event, pdate;
+	String pid, category, prdNm, brdNm, event, pdate;
 	
+	public String getPid() {
+		return pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
+	}
 	public String getPdate() {
 		return pdate;
 	}

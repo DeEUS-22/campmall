@@ -23,7 +23,7 @@ public class CpmProductDAO {
 	}//insert-end
 	
 	/**
-	 * select
+	 * select : list 불러오기
 	 */
 	public ArrayList<CpmProductVO> select(){
 		
@@ -31,4 +31,26 @@ public class CpmProductDAO {
 		
 		return (ArrayList<CpmProductVO>)list;
 	}
+	
+	/**
+	 * select : 상세정보 가져오기
+	 */
+	public CpmProductVO select(String pid) {
+		return sqlSession.selectOne("mapper.product.content", pid);
+	}
+	
+	/**
+	 * update : 상품수정 
+	 */
+	public int update(CpmProductVO vo) {		
+		return sqlSession.update("mapper.product.update",vo);
+	}
+	
+	/**
+	 * delete : 상품삭제
+	 */
+	public int delete(String pid) {
+		return sqlSession.delete("mapper.product.delete",pid);
+	}
+	
 }

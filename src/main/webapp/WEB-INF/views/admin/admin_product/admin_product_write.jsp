@@ -115,7 +115,7 @@
 -->
 <section class="bg-light">
 	<div id="contents" class="container py-4">
-		<form id="prdForm" method="post" action="prdWrite.do">
+		<form id="prdWriteForm" method="post" action="prdWrite.do">
 			<div class="form-group">
 				<span class="text-dark h4">상품등록</span>
 			</div>
