@@ -1,20 +1,32 @@
 package com.campmall.vo;
 
 public class CpmProductVO {
-	int pid, price, dc, sale, stock;
-	String category, prdNm, brdNm, event;
+	int rno, price, dc, sale, stock;
+	String category, prdNm, brdNm, event, pdate;
 	
+	public String getPdate() {
+		return pdate;
+	}
+	public void setPdate(String pdate) {
+		this.pdate = pdate;
+	}
 	public String getEvent() {
 		return event;
 	}
 	public void setEvent(String event) {
 		this.event = event;
 	}
-	public int getPid() {
-		return pid;
+	public int getRno() {
+		return rno;
 	}
-	public void setPid(int pid) {
-		this.pid = pid;
+	public int getStock() {
+		return stock;
+	}
+	public void setStock(int stock) {
+		this.stock = stock;
+	}
+	public void setRno(int rno) {
+		this.rno = rno;
 	}
 	public int getPrice() {
 		return price;
@@ -33,12 +45,6 @@ public class CpmProductVO {
 	}
 	public void setSale(int sale) {
 		this.sale = sale;
-	}
-	public int getStock() {
-		return stock;
-	}
-	public void setStock(int stock) {
-		this.stock = stock;
 	}
 	public String getCategory() {
 		return category;

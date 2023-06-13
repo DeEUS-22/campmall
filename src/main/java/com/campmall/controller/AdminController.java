@@ -37,6 +37,7 @@ public class AdminController {
 
 		ArrayList<CpmProductVO> list = productService.getList(); 
 		
+		mv.addObject("list", list);
 		mv.setViewName("/admin/admin_product/admin_product_list");
 		return mv;
 	}

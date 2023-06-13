@@ -1,5 +1,7 @@
 package com.campmall.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,5 +18,12 @@ public class ProductServiceImpl implements ProductService{
 	@Override
 	public int getSaveResult(CpmProductVO vo) {	
 		return productDao.insert(vo);
+	}
+	
+	/* 상품목록 불러오기*/
+	@Override
+	public ArrayList<CpmProductVO> getList(){
+		ArrayList<CpmProductVO> list = productDao.select();
+		return list;
 	}
 }

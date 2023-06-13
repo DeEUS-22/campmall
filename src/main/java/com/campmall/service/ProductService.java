@@ -7,5 +7,5 @@ import com.campmall.vo.CpmProductVO;
 public interface ProductService {
 
 	int getSaveResult(CpmProductVO vo);
-	ArrayList<CpmProductVO> getList(int startCount, int endCount);
+	ArrayList<CpmProductVO> getList();
 }
