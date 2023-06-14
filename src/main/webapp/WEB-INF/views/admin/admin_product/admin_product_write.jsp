@@ -182,7 +182,7 @@
 				<label class="form-label mt-4">분류</label>
 				<div class="form-check">
 					<input type="radio" name="event" id="best" value="best" class="form-check-input"><label for="best" class="form-check-label" style="margin-right:25px;">베스트</label>
-					<input type="radio" name="event" id="new" value="new" class="form-check-input" checked><label for="new" class="form-check-label" style="margin-right:25px;">신상품</label>
+					<input type="radio" name="event" id="new" value="newProduct" class="form-check-input" checked><label for="new" class="form-check-label" style="margin-right:25px;">신상품</label>
 					<input type="radio" name="event" id="special" value="special" class="form-check-input"><label for="special" class="form-check-label" style="margin-right:25px;">특가상품</label>
 					<input type="radio" name="event" id="pick" value="pick" class="form-check-input"><label for="pick" class="form-check-label" style="margin-right:25px;">추천상품</label>
 				</div>

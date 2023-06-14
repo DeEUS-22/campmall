@@ -85,7 +85,7 @@ $(document).ready(function(){
 		상품등록 유효성 체크
 	**********************/
 	$("#prdSave").click(function(){
-		prdForm.submit();
+		prdWriteForm.submit();
 	}); //click()-end
 	
 	

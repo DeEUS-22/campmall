@@ -43,6 +43,16 @@ public class CpmProductDAO {
 	}
 	
 	/**
+	 * detailList : 
+	 */
+	public ArrayList<CpmProductVO> detailList(CpmProductVO vo){
+		
+		List<CpmProductVO> list = sqlSession.selectList("mapper.product.detailList", vo);
+		
+		return (ArrayList<CpmProductVO>)list;
+	}
+	
+	/**
 	 * select : 상세정보 가져오기
 	 */
 	public CpmProductVO select(String pid) {

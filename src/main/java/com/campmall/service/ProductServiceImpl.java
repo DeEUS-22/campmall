@@ -29,8 +29,15 @@ public class ProductServiceImpl implements ProductService{
 	
 	/* 특정 카테고리 상품목록 불러오기*/
 	@Override
-	public ArrayList<CpmProductVO> getList(String category){
-		ArrayList<CpmProductVO> list = productDao.selectList(category);
+	public ArrayList<CpmProductVO> getList(String event){
+		ArrayList<CpmProductVO> list = productDao.selectList(event);
+		return list;
+	}
+	
+	/* 세부 목록 출력*/
+	@Override
+	public ArrayList<CpmProductVO> getDetailList(CpmProductVO vo){
+		ArrayList<CpmProductVO> list = productDao.detailList(vo);
 		return list;
 	}
 	

@@ -23,9 +23,8 @@ public class AdminController {
 	 * admin.do : 관리자 페이지 호출
 	 */
 	@RequestMapping(value="/admin.do", method=RequestMethod.GET)
-	public ModelAndView admin(String auth) {
+	public ModelAndView admin() {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
 		mv.setViewName("/admin/admin");
 		return mv;
 	}
@@ -48,13 +47,15 @@ public class AdminController {
 	 * admin_product_write.do : 상품 등록
 	 */
 	@RequestMapping(value="/admin_product_write.do", method=RequestMethod.GET)
-	public ModelAndView adminProductWrite(String auth) {
+	public ModelAndView adminProductWrite() {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
 		mv.setViewName("/admin/admin_product/admin_product_write");
 		return mv;
 	}
 	
+	/**
+	 * prdWrite.do
+	 */
 	@RequestMapping(value="/prdWrite.do", method=RequestMethod.POST)
 	public ModelAndView prdWrite(CpmProductVO vo) {
 		ModelAndView mv = new ModelAndView();
@@ -64,7 +65,7 @@ public class AdminController {
 		
 		if(result == 1){
 			mv.addObject("save_result","ok");
-			mv.setViewName("/admin/admin_product/admin_product_list");
+			mv.setViewName("redirect:/admin_product_list.do");
 		}else{
 			mv.setViewName("errorPage");
 		}

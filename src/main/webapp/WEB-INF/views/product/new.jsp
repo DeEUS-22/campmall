@@ -24,7 +24,7 @@
 
   <!-- js -->
   <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.4.min.js"></script>
-  <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
+  <!-- <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script> -->
   <script src="http://localhost:9000/campmall/resources/js/animation.js"></script>
 </head>
 
@@ -93,7 +93,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="javascript:void(0)" id="test" val="season">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
 						<p>계절용품</p>
 					</a>
@@ -136,7 +136,7 @@
             <option>높은가격</option>
           </select>
         </div>
-        <ul class="clearfix">
+        <ul class="clearfix" id="prdList">
           <c:forEach var="vo"  items="${list}">
 			<li>
 				<a href="#">
@@ -179,6 +179,9 @@
       </ul>
     </div>
   </div>
+	<div>
+	</div>
+<input type="hidden" id="event" name="event" value="${newProduct}" />
 
 <!-------------------->
 <!-- footer Include -->
@@ -186,4 +189,95 @@
 <jsp:include page="../footer.jsp"></jsp:include>
 </body>
 
+<script>
+	$(function(){
+		$("#test").on("click", function(){
+			var event = $("#event").val();
+			var category = $(this).attr('val');
+			
+			PROD.list(event, category);
+			
+			debugger;
+		});
+		
+		var PROD = {
+			list : function(category, event) {
+				alert("여기탔나?");
+				$.ajax({
+					url : "/campmall/product/detail.do",
+					type : "post",
+					dataType : "json",
+					data : {
+						"event" : event,
+						"category" : category
+					},
+					success : function(data) {
+						debugger;
+						var list = data.list;
+						
+						if(list.length > 0){
+							var newlistVal = "";
+							
+							for(var i=0; i<list.length; i++){
+								newlistVal += "<li>";
+								newlistVal += "<img src='http://localhost:9000/campmall/resources/images/0240070027527.jpg' alt='#'>";
+			    		    	newlistVal += "<h3>"+list[i].brdNm+"</h3>";
+			    		    	newlistVal += "<p class='content'>"+ list[i].prdNm + "</p>";
+			    		    	newlistVal += "<p class='price discount'>"+ list[i].price + "</p>";
+			    		    	newlistVal += "<p class='price'>"+ list[i].sale + "</p>";
+			    		    	newlistVal += "<p class='percent'>"+ list[i].dc + "</p>";
+			    		    	newlistVal += "</a>";
+			    		    	newlistVal += "</li>";
+							}
+							$("#prdList").append(newlistVal);
+						} else {
+							newlistVal += "<h1>게시글이 없습니다.</h1>";
+							$("#prdList").append(newlistVal);
+						}
+					}
+				});
+			}
+		}
+	});
+	/*
+	function click(){
+		var event = $("#event").val();
+		var category = $(this).val();
+		
+		$.ajax({
+			url : "/product/detail.do",
+			type : "post",
+			dataType : "json",
+			data : {
+				"event" : event,
+				"category" : category
+			},
+			
+			success : function(data) {
+				var list = data.list;
+				
+				if(list.length > 0){
+					var newlistVal = "";
+					
+					for(var i=0; i<list.length; i++){
+						newlistVal += "<li>";
+						newlistVal += "<img src='http://localhost:9000/campmall/resources/images/0240070027527.jpg' alt='#'>";
+	    		    	newlistVal += "<h3>"+list[i].brdNm+"</h3>";
+	    		    	newlistVal += "<p class='content'>"+ list[i].prdNm + "</p>";
+	    		    	newlistVal += "<p class='price discount'>"+ list[i].price + "</p>";
+	    		    	newlistVal += "<p class='price'>"+ list[i].sale + "</p>";
+	    		    	newlistVal += "<p class='percent'>"+ list[i].dc + "</p>";
+	    		    	newlistVal += "</a>";
+	    		    	newlistVal += "</li>";
+					}
+					$("#prdList").append(newlistVal);
+				} else {
+					newlistVal += "<h1>게시글이 없습니다.</h1>";
+					$("#prdList").append(newlistVal);
+				}
+			}
+		});
+	}
+	 */
+</script>
 </html>
