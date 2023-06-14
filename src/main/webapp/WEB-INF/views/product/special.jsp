@@ -143,16 +143,18 @@
           </select>
         </div>
         <ul class="clearfix">
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
-              <h3>듀랑고</h3>
-              <p class="content">슬림가스스토브 #</p>
-              <p class="price discount">100,000원</p>
-              <p class="price">100,000원</p>
-              <p class="percent">10%</p>
-            </a>
-          </li>
+        <c:forEach var="vo"  items="${list}">
+			<li>
+				<a href="#">
+	              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
+	              <h3>${vo.brdNm }</h3>
+	              <p class="content">${vo.prdNm }</p>
+	              <p class="price discount">${vo.price }원</p>
+	              <p class="price">${vo.sale }원</p>
+	              <p class="percent">${vo.dc }%</p>
+	            </a>
+			</li>
+		</c:forEach>
         </ul>
       </div>
     </section>

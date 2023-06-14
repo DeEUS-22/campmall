@@ -17,6 +17,11 @@
 		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product
 	</select>
 	
+	<!-- product selectList -->
+	<select id="selectList" parameterType="java.lang.String" resultType="com.campmall.vo.CpmProductVO">
+		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product where event=#{category}
+	</select>
+	
 	<!-- product content -->
 	<select id="content" parameterType="java.lang.String" resultType="com.campmall.vo.CpmProductVO">
 		select pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate

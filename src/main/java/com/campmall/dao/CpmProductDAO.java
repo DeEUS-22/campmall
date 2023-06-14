@@ -33,6 +33,16 @@ public class CpmProductDAO {
 	}
 	
 	/**
+	 * selectList : 특정 카테고리 list 불러오기
+	 */
+	public ArrayList<CpmProductVO> selectList(String category){
+		
+		List<CpmProductVO> list = sqlSession.selectList("mapper.product.selectList", category);
+		
+		return (ArrayList<CpmProductVO>)list;
+	}
+	
+	/**
 	 * select : 상세정보 가져오기
 	 */
 	public CpmProductVO select(String pid) {
