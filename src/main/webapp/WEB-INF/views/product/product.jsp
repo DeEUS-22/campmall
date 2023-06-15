@@ -56,20 +56,20 @@
 					<img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
 				</div>
 				<div class="right">
-					<p class="brand"><strong>브랜드명</strong></p>
-					<p class="item_name">상품명</p>
+					<p class="brand"><strong>${vo.brdNm }</strong></p>
+					<p class="item_name">${vo.prdNm }</p>
 					<div class="price_area">
 						<div class="price_row">
 							<span class="price_menu">할인률</span>
-							<span class="price_discount">10%</span>
+							<span class="price_discount">${vo.dc }%</span>
 						</div>
 						<div class="price_row">
 							<span class="price_menu">정상가</span>
-							<span class="price_basic">70,000원</span>
+							<span class="price_basic">${vo.price}원</span>
 						</div>
 						<div class="price_row">
 							<span class="price_menu">판매가</span>
-							<span class="price_sell"><strong>70,000원</strong></span>
+							<span class="price_sell"><strong>${vo.sale }원</strong></span>
 						</div>
 						<div class="price_row">
 							<span class="price_menu">수량</span>
