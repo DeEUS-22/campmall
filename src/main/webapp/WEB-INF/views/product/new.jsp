@@ -130,7 +130,6 @@
       <div class="item_inner">
         <div class="top_area">
           <h2>NEW ITEMS</h2>
-          <div>${newProduct}</div>
           <select>
             <option>상품정렬</option>
             <option>낮은가격</option>
