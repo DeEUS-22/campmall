@@ -84,7 +84,7 @@
             </div>
           </div>
           <a href="#" class="btn_buy">구매하기</a>
-          <a href="#" class="btn_basket">장바구니</a>
+          <a href="/campmall/baskert.do" class="btn_basket">장바구니</a>
         </div>
       </div>
       <div id="first" class="product_menu">
