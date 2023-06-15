@@ -145,7 +145,7 @@
         <ul class="clearfix">
         <c:forEach var="vo"  items="${list}">
 			<li>
-				<a href="#">
+				<a href="/campmall/product/product.do?pid=${vo.pid}">
 	              <img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
 	              <h3>${vo.brdNm }</h3>
 	              <p class="content">${vo.prdNm }</p>

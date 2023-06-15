@@ -38,6 +38,60 @@ public class AdminController {
 
 		ArrayList<CpmProductVO> list = productService.getList(); 
 		
+		for(int i=0; i<list.size(); i++) {
+			String category = list.get(i).getCategory();
+			
+			if("vr".equals(category)) {
+
+				list.get(i).setCategory("듀랑고VR");
+				
+			} else if("tent".equals(category)) {
+
+				list.get(i).setCategory("텐트-타프");
+				
+			} else if("bed".equals(category)) {
+
+				list.get(i).setCategory("침낭-매트");
+				
+			} else if("furniture".equals(category)) {
+
+				list.get(i).setCategory("퍼니처");
+				
+			} else if("rt".equals(category)) {
+
+				list.get(i).setCategory("라이팅");
+				
+			} else if ("bbq".equals(category)) {
+				
+				list.get(i).setCategory("화로-BBQ");
+				
+			} else if("kitchen".equals(category)) {
+
+				list.get(i).setCategory("키친");
+				
+			} else if("season".equals(category)) {
+
+				list.get(i).setCategory("계절용품");
+				
+			} else if("storage".equals(category)) {
+
+				list.get(i).setCategory("스토리지");
+				
+			} else if("rv".equals(category)) {
+
+				list.get(i).setCategory("RV용품");
+				
+			} else if("acc".equals(category)) {
+
+				list.get(i).setCategory("악세서리");
+				
+			} else if ("mt".equals(category)) {
+
+				list.get(i).setCategory("밀리터리");
+				
+			}
+		}
+		
 		mv.addObject("list", list);
 		mv.setViewName("/admin/admin_product/admin_product_list");
 		return mv;
