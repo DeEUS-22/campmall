@@ -46,77 +46,77 @@
 
 
   <div class="container">
-    <div class="category">
-      <div class="category_inner">
-        <ul class="clearfix">
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
-              <p>듀랑고VR</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_01.png" alt="#">
-              <p>텐트ㆍ타프</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_02.png" alt="#">
-              <p>침낭ㆍ매트</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_03.png" alt="#">
-              <p>퍼니처</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_04.png" alt="#">
-              <p>라이팅</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_05.png" alt="#">
-              <p>화로ㆍBBQ</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
-              <p>키친</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
-              <p>계절용품</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="http://localhost:9000/campmall/resources/images/main_category_icon_08.png" alt="#">
-              <p>스토리지</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
+	<div class="category">
+		<div class="category_inner">
+			<ul class="clearfix">
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=vr">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
+						<p>듀랑고VR</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=tent">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_01.png" alt="#">
+						<p>텐트ㆍ타프</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=bed">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_02.png" alt="#">
+						<p>침낭ㆍ매트</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=furniture">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_03.png" alt="#">
+						<p>퍼니처</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=rt">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_04.png" alt="#">
+						<p>라이팅</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=bbq">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_05.png" alt="#">
+						<p>화로ㆍBBQ</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=kithcen">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
+						<p>키친</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=season">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
+						<p>계절용품</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=storage">
+						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_08.png" alt="#">
+						<p>스토리지</p>
+					</a>
+				</li>
+				<li>
+					<a href="/campmall/product/detail.do?event=best&category=rv">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_09.png" alt="#">
               <p>RV용품</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/campmall/product/detail.do?event=best&category=acc">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_10.png" alt="#">
               <p>액세사리</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/campmall/product/detail.do?event=best&category=mt">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_11.png" alt="#">
               <p>밀리터리</p>
             </a>

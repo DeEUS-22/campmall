@@ -22,9 +22,8 @@ public class ProductController {
 	 * product.do : 상품 상세 정보
 	 */
 	@RequestMapping(value="/product/product.do", method=RequestMethod.GET)
-	public ModelAndView product(String auth) {
+	public ModelAndView product() {
 		ModelAndView mv = new ModelAndView();
-		//mv.addObject("auth", auth);
 		mv.setViewName("/product/product");
 		return mv;
 	}
@@ -89,7 +88,8 @@ public class ProductController {
 	/**
 	 * detail : 세부 카테고리별 상품 출력
 	 */
-	@RequestMapping(value="/product/detail.do", method=RequestMethod.POST)
+	/*
+	@RequestMapping(value="/product/detail.do", method=RequestMethod.GET)
 	public ModelAndView detail(@RequestParam String event, @RequestParam String category) {
 		ModelAndView mv = new ModelAndView();
 		
@@ -103,4 +103,21 @@ public class ProductController {
 		mv.addObject("list", list);
 		return mv;
 	}
+	*/
+	@RequestMapping(value="/product/detail.do", method=RequestMethod.GET)
+	public ModelAndView detail(String event, String category) {
+		ModelAndView mv = new ModelAndView();
+		
+		CpmProductVO vo = new CpmProductVO();
+		
+		vo.setEvent(event);
+		vo.setCategory(category);
+		
+		ArrayList<CpmProductVO> list = productService.getDetailList(vo);
+		
+		mv.addObject("list", list);
+		mv.setViewName("/product/new");
+		return mv;
+	}
+	
 }

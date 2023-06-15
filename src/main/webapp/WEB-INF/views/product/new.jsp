@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"
     isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <%
    request.setCharacterEncoding("utf-8");
 %>
@@ -24,8 +23,9 @@
 
   <!-- js -->
   <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script> -->
-  <script src="http://localhost:9000/campmall/resources/js/animation.js"></script>
+  <!-- <script src="http://localhost:9000/campmall/resources/js/animation.js"></script> -->
 </head>
 
 <body>
@@ -51,73 +51,73 @@
 		<div class="category_inner">
 			<ul class="clearfix">
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=vr">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
 						<p>듀랑고VR</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=tent">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_01.png" alt="#">
 						<p>텐트ㆍ타프</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=bed">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_02.png" alt="#">
 						<p>침낭ㆍ매트</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=furniture">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_03.png" alt="#">
 						<p>퍼니처</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=rt">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_04.png" alt="#">
 						<p>라이팅</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=bbq">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_05.png" alt="#">
 						<p>화로ㆍBBQ</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=kithcen">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
 						<p>키친</p>
 					</a>
 				</li>
 				<li>
-					<a href="javascript:void(0)" id="test" val="season">
+					<a href="/campmall/product/detail.do?event=newProduct&category=season">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_07.png" alt="#">
 						<p>계절용품</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=storage">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_08.png" alt="#">
 						<p>스토리지</p>
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="/campmall/product/detail.do?event=newProduct&category=rv">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_09.png" alt="#">
               <p>RV용품</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/campmall/product/detail.do?event=newProduct&category=acc">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_10.png" alt="#">
               <p>액세사리</p>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/campmall/product/detail.do?event=newProduct&category=mt">
               <img src="http://localhost:9000/campmall/resources/images/main_category_icon_11.png" alt="#">
               <p>밀리터리</p>
             </a>
@@ -130,6 +130,7 @@
       <div class="item_inner">
         <div class="top_area">
           <h2>NEW ITEMS</h2>
+          <div>${newProduct}</div>
           <select>
             <option>상품정렬</option>
             <option>낮은가격</option>
@@ -188,96 +189,4 @@
 <!-------------------->
 <jsp:include page="../footer.jsp"></jsp:include>
 </body>
-
-<script>
-	$(function(){
-		$("#test").on("click", function(){
-			var event = $("#event").val();
-			var category = $(this).attr('val');
-			
-			PROD.list(event, category);
-			
-			debugger;
-		});
-		
-		var PROD = {
-			list : function(category, event) {
-				alert("여기탔나?");
-				$.ajax({
-					url : "/campmall/product/detail.do",
-					type : "post",
-					dataType : "json",
-					data : {
-						"event" : event,
-						"category" : category
-					},
-					success : function(data) {
-						debugger;
-						var list = data.list;
-						
-						if(list.length > 0){
-							var newlistVal = "";
-							
-							for(var i=0; i<list.length; i++){
-								newlistVal += "<li>";
-								newlistVal += "<img src='http://localhost:9000/campmall/resources/images/0240070027527.jpg' alt='#'>";
-			    		    	newlistVal += "<h3>"+list[i].brdNm+"</h3>";
-			    		    	newlistVal += "<p class='content'>"+ list[i].prdNm + "</p>";
-			    		    	newlistVal += "<p class='price discount'>"+ list[i].price + "</p>";
-			    		    	newlistVal += "<p class='price'>"+ list[i].sale + "</p>";
-			    		    	newlistVal += "<p class='percent'>"+ list[i].dc + "</p>";
-			    		    	newlistVal += "</a>";
-			    		    	newlistVal += "</li>";
-							}
-							$("#prdList").append(newlistVal);
-						} else {
-							newlistVal += "<h1>게시글이 없습니다.</h1>";
-							$("#prdList").append(newlistVal);
-						}
-					}
-				});
-			}
-		}
-	});
-	/*
-	function click(){
-		var event = $("#event").val();
-		var category = $(this).val();
-		
-		$.ajax({
-			url : "/product/detail.do",
-			type : "post",
-			dataType : "json",
-			data : {
-				"event" : event,
-				"category" : category
-			},
-			
-			success : function(data) {
-				var list = data.list;
-				
-				if(list.length > 0){
-					var newlistVal = "";
-					
-					for(var i=0; i<list.length; i++){
-						newlistVal += "<li>";
-						newlistVal += "<img src='http://localhost:9000/campmall/resources/images/0240070027527.jpg' alt='#'>";
-	    		    	newlistVal += "<h3>"+list[i].brdNm+"</h3>";
-	    		    	newlistVal += "<p class='content'>"+ list[i].prdNm + "</p>";
-	    		    	newlistVal += "<p class='price discount'>"+ list[i].price + "</p>";
-	    		    	newlistVal += "<p class='price'>"+ list[i].sale + "</p>";
-	    		    	newlistVal += "<p class='percent'>"+ list[i].dc + "</p>";
-	    		    	newlistVal += "</a>";
-	    		    	newlistVal += "</li>";
-					}
-					$("#prdList").append(newlistVal);
-				} else {
-					newlistVal += "<h1>게시글이 없습니다.</h1>";
-					$("#prdList").append(newlistVal);
-				}
-			}
-		});
-	}
-	 */
-</script>
 </html>
