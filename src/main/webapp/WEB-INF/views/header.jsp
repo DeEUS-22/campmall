@@ -21,12 +21,12 @@
 					<c:choose>	
 						<c:when test="${sessionScope.svo == null}">	
 							<li><a href="http://localhost:9000/campmall/notice/qna.do">고객센터</a></li>
-							<li><a href="http://localhost:9000/campmall/baskert/baskert.do">장바구니</a></li>
+							<li><a href="http://localhost:9000/campmall/baskert.do">장바구니</a></li>
 							<li><a href="http://localhost:9000/campmall/login.do">로그인</a></li>
 						</c:when>
 						<c:otherwise>
 							<li><a href="http://localhost:9000/campmall/notice/qna.do">고객센터</a></li>
-							<li><a href="http://localhost:9000/campmall/baskert/baskert.do">장바구니</a></li>
+							<li><a href="http://localhost:9000/campmall/baskert.do">장바구니</a></li>
 							<li><a href="#">마이페이지</a></li>
 							<c:if test="${sessionScope.svo.email == 'admin@naver.com'}">
 								<a href="http://localhost:9000/campmall/admin.do"><span>관리자페이지</span></a>

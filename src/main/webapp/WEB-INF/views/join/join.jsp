@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/admin.css">
+<link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/register.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
