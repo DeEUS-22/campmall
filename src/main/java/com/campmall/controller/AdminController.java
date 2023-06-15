@@ -92,6 +92,28 @@ public class AdminController {
 			}
 		}
 		
+		for(int i=0; i<list.size(); i++) {
+			String event = list.get(i).getEvent();
+			
+			if("best".equals(event)) {
+
+				list.get(i).setEvent("베스트");
+				
+			} else if("newProduct".equals(event)) {
+
+				list.get(i).setEvent("신상품");
+				
+			} else if("special".equals(event)) {
+
+				list.get(i).setEvent("특가상품");
+				
+			} else if("pick".equals(event)) {
+
+				list.get(i).setEvent("추천상품");
+				
+			}
+		}
+		
 		mv.addObject("list", list);
 		mv.setViewName("/admin/admin_product/admin_product_list");
 		return mv;

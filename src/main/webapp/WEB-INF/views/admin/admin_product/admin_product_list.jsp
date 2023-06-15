@@ -60,6 +60,7 @@ $(document).ready(function(){
 		<tr>
 			<th>번호</th>
 			<th>카테고리</th>
+			<th>분류</th>
 			<th>상품명</th>
 			<th>브랜드명</th>
 			<th>정상가(원)</th>
@@ -84,6 +85,7 @@ $(document).ready(function(){
 		<tr>
 			<td>${vo.rno }</td>
 			<td>${vo.category }</td>
+			<td>${vo.event }</td>
 			<td><a href="/campmall/admin_product_update.do?pid=${vo.pid}">${vo.prdNm}</a></td>
 			<td>${vo.brdNm }</td>
 			<td>${vo.price }</td>
@@ -94,7 +96,7 @@ $(document).ready(function(){
 		</tr>
 		</c:forEach>
 		<tr>
-			<td colspan="9"><div id="ampaginationsm"></div></td>
+			<td colspan="10"><div id="ampaginationsm"></div></td>
 		</tr>
 	</table>
 	<div id="ampaginationsm"></div>
