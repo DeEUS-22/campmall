@@ -3,7 +3,13 @@ package com.campmall.vo;
 public class SessionVO {
 
 	int loginresult;
-	String email, pwd;
+	String email, pwd, mid;
+	public String getMid() {
+		return mid;
+	}
+	public void setMid(String mid) {
+		this.mid = mid;
+	}
 	public int getLoginresult() {
 		return loginresult;
 	}

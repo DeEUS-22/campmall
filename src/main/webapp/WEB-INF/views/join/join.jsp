@@ -4,11 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/admin.css">
+<link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/reset.css">
 <link rel="stylesheet"  href="http://localhost:9000/campmall/resources/css/register.css">
+<link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/header.css">
+<link rel="stylesheet" href="http://localhost:9000/campmall/resources/css/footer.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/header.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/animation.js"></script>
+<script src="http://localhost:9000/campmall/resources/js/register.js"></script>
 <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
+
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
@@ -93,7 +101,7 @@
 									<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
 								</svg>
 							</a>
-							<ul>
+							<ul style="display:none">
 								<li>
 									<p class="indent">
 										<label><input type="checkbox" name="condition" value="Y">이용약관 동의</label>

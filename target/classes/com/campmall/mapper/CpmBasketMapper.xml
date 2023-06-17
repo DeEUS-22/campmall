@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.basket">
+	<!-- basket insert -->
+	<insert id="insert" parameterType="hashMap" >
+		insert into cpm_basket
+			 values ('b_'||sequ_cpm_basket.nextval, #{bbrdNm}, #{bprdNm}, #{bprice}, #{bnote}, sysdate, #{mid})
+	</insert>
+	
+	<!-- basket getList -->
+	<select id="getList" parameterType="java.lang.String" resultType="com.campmall.vo.CpmBasketVO">
+		select rownum rno, bid, bbrdnm, bprdnm, bprice, bnote, bdate, mid from cpm_basket where mid=#{mid}
+	</select>
+</mapper>
