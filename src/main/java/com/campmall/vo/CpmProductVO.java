@@ -1,9 +1,31 @@
 package com.campmall.vo;
 
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
 public class CpmProductVO {
 	int rno, price, dc, sale, stock;
-	String pid, category, prdNm, brdNm, event, pdate;
+	String pid, category, prdNm, brdNm, event, pdate, pfile, psfile;
+	CommonsMultipartFile file1;
 	
+	
+	public String getPfile() {
+		return pfile;
+	}
+	public void setPfile(String pfile) {
+		this.pfile = pfile;
+	}
+	public String getPsfile() {
+		return psfile;
+	}
+	public void setPsfile(String psfile) {
+		this.psfile = psfile;
+	}
+	public CommonsMultipartFile getFile1() {
+		return file1;
+	}
+	public void setFile1(CommonsMultipartFile file1) {
+		this.file1 = file1;
+	}
 	public String getPid() {
 		return pid;
 	}

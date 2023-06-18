@@ -115,16 +115,16 @@
 -->
 <section class="bg-light">
 	<div id="contents" class="container py-4">
-		<form id="prdWriteForm" method="post" action="prdWrite.do">
+		<form id="prdWriteForm" method="post" action="prdWrite.do" enctype="multipart/form-data">
 			<div class="form-group">
 				<span class="text-dark h4">상품등록</span>
 			</div>
 			
-			<div class="form-group">
+			<!-- <div class="form-group">
 				<p>대표이미지</p>
 				<div id="prdThumbBox">
 					<div>
-						<input id="prdAddFile" type="file" accept="image/*" name="file">
+						<input id="prdAddFile" type="file" name="file">
 						<div id="fileNm">
 							<c:if test="${not empty prgrView.fileOrgNm}">${prgrView.fileOrgNm}</c:if>
 							<c:if test="${empty prgrView.fileNm}">대표이미지 등록해주세요</c:if>
@@ -133,6 +133,11 @@
 					</div>
 					<label for="prdAddFile">첨부</label>
 				</div>
+			</div> -->
+			
+			<div class="form-group">
+				<p>파일첨부</p>
+				<input type="file" name="file1">
 			</div>
 			
 			<div class="form-group">

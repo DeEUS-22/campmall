@@ -25,10 +25,15 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- multipartResolver -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</beans:bean> 
+	
 	<!-- service 객체 생성 -->
 	<beans:bean id="memberService"  class="com.campmall.service.MemberServiceImpl"></beans:bean>
 	<beans:bean id="productService"  class="com.campmall.service.ProductServiceImpl"></beans:bean>
 	<beans:bean id="basketService"  class="com.campmall.service.BasketServiceImpl"></beans:bean>
+	<beans:bean id="fileService"  class="com.campmall.service.FileServiceImpl"></beans:bean>
 	
 	<!-- dao 객체 생성 :  -->
 	<beans:bean id="memberDao"  class="com.campmall.dao.CpmMemberDAO"></beans:bean>

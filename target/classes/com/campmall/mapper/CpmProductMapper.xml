@@ -6,9 +6,9 @@
 
 <mapper namespace="mapper.product">
 	<!-- product join -->
-	<insert id="join" parameterType="com.campmall.vo.CpmProductVO">
+	<insert id="insert" parameterType="com.campmall.vo.CpmProductVO">
 		insert into cpm_product	
-			 values ('p_'||sequ_cpm_product.nextval, #{category}, #{prdNm}, #{brdNm}, #{price}, #{dc}, #{sale}, #{stock}, #{event}, sysdate)
+			 values ('p_'||sequ_cpm_product.nextval, #{category}, #{prdNm}, #{brdNm}, #{price}, #{dc}, #{sale}, #{stock}, #{event}, #{pfile}, #{psfile}, sysdate)
 	</insert>
 	
 	

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.campmall.service.FileServiceImpl;
 import com.campmall.service.ProductServiceImpl;
 import com.campmall.vo.CpmProductVO;
 
@@ -18,6 +19,9 @@ public class AdminController {
 
 	@Autowired
 	private ProductServiceImpl productService;
+	
+	@Autowired
+	private FileServiceImpl fileService;
 	
 	/**
 	 * admin.do : 관리자 페이지 호출
@@ -133,13 +137,20 @@ public class AdminController {
 	 * prdWrite.do
 	 */
 	@RequestMapping(value="/prdWrite.do", method=RequestMethod.POST)
-	public ModelAndView prdWrite(CpmProductVO vo) {
+	public ModelAndView prdWrite(CpmProductVO vo, HttpServletRequest request) throws Exception {
 		ModelAndView mv = new ModelAndView();
+		
+		
+		//file 이름 만들기
+		vo = fileService.fileCheck(vo);
 		
 		int result = productService.getSaveResult(vo);
 		
-		
 		if(result == 1){
+			
+			//file 업로드
+			fileService.fileSave(vo, request);
+			
 			mv.addObject("save_result","ok");
 			mv.setViewName("redirect:/admin_product_list.do");
 		}else{

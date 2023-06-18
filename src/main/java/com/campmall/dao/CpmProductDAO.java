@@ -19,7 +19,7 @@ public class CpmProductDAO {
 	 * insert
 	 */
 	public int insert(CpmProductVO vo) {
-		return sqlSession.insert("mapper.product.join", vo);
+		return sqlSession.insert("mapper.product.insert", vo);
 	}//insert-end
 	
 	/**
