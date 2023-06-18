@@ -5,7 +5,7 @@
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.product">
-	<!-- product join -->
+	<!-- product insert -->
 	<insert id="insert" parameterType="com.campmall.vo.CpmProductVO">
 		insert into cpm_product	
 			 values ('p_'||sequ_cpm_product.nextval, #{category}, #{prdNm}, #{brdNm}, #{price}, #{dc}, #{sale}, #{stock}, #{event}, #{pfile}, #{psfile}, sysdate)
@@ -14,22 +14,22 @@
 	
 	<!-- product list -->
 	<select id="list" resultType="com.campmall.vo.CpmProductVO">
-		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product
+		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate, pfile, psfile from cpm_product
 	</select>
 	
 	<!-- product selectList -->
 	<select id="selectList" parameterType="java.lang.String" resultType="com.campmall.vo.CpmProductVO">
-		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product where event=#{event}
+		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate, pfile, psfile from cpm_product where event=#{event}
 	</select>
 	
 	<!-- product detailList -->
 	<select id="detailList" parameterType="com.campmall.vo.CpmProductVO" resultType="com.campmall.vo.CpmProductVO">
-		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate from cpm_product where event=#{event} and category=#{category}
+		select rownum rno, pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate, pfile, psfile from cpm_product where event=#{event} and category=#{category}
 	</select>
 	
 	<!-- product content -->
 	<select id="content" parameterType="java.lang.String" resultType="com.campmall.vo.CpmProductVO">
-		select pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate
+		select pid, category, prdnm, brdnm, price, dc, sale, stock, event, pdate, pfile, psfile
 		 from cpm_product  where pid=#{pid}
 	</select>
 	

@@ -29,17 +29,7 @@
 			
 			<div class="form-group">
 				<p>대표이미지</p>
-				<div id="prdThumbBox">
-					<div>
-						<input id="prdAddFile" type="file" accept="image/*" name="file">
-						<div id="fileNm">
-							<c:if test="${not empty prgrView.fileOrgNm}">${prgrView.fileOrgNm}</c:if>
-							<c:if test="${empty prgrView.fileNm}">대표이미지 등록해주세요</c:if>
-						</div>
-						<button type="button" id="btnDelThumb" style="display: none;">삭제</button>
-					</div>
-					<label for="prdAddFile">첨부</label>
-				</div>
+				<input type="file" name="file1">
 			</div>
 			
 			<div class="form-group">

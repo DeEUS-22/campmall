@@ -13,7 +13,7 @@
 	
 	<!-- basket getList -->
 	<select id="getList" parameterType="java.lang.String" resultType="com.campmall.vo.CpmBasketVO">
-		select rownum rno, bid, bbrdnm, bprdnm, bprice, bnote, bdate, mid from cpm_basket where mid=#{mid}
+		select rownum rno, bid, bbrdnm, bprdnm, bprice, bnote, bdate, mid, bfile, bsfile from cpm_basket where mid=#{mid}
 	</select>
 	
 	<!-- basket delete -->

@@ -55,40 +55,10 @@ request.setCharacterEncoding("utf-8");
 			<div class="product_inner">
 				<div class="product_top clearfix">
 					<div class="left">
-						<img src="http://localhost:9000/campmall/resources/images/0240070027527.jpg" alt="#">
+						<img src="http://localhost:9000/campmall/resources/upload/${vo.psfile }" alt="#">
 					</div>
 					<div class="right">
-						<!-- 
-						<form>
-						<p class="brand"><strong>${vo.brdNm }</strong></p>
-						<p class="item_name">${vo.prdNm }</p>
-						<div class="price_area">
-							<div class="price_row">
-								<span class="price_menu">할인률</span> <span class="price_discount">${vo.dc }%</span>
-							</div>
-							<div class="price_row">
-								<span class="price_menu">정상가</span> <span class="price_basic">${vo.price}원</span>
-							</div>
-							<div class="price_row">
-								<span class="price_menu">판매가</span> <span class="price_sell"><strong>${vo.sale }원</strong></span>
-							</div>
-							<div class="price_row">
-								<span class="price_menu">수량</span> <span class="price_number">
-									<form action="#">
-										<fieldset>
-											<legend>수량 입력 폼</legend>
-											<input type="number" value="1" min="1" max="99">
-										</fieldset>
-									</form>
-								</span>
-							</div>
-						</div>
-						<a href="#" class="btn_buy">구매하기</a> 
-						<a href="/campmall/baskert.do" class="btn_basket">장바구니</a>
-						</form>
-						-->
 						<form name="BasketForm" action="/campmall/basketCheck.do" method="post">
-						
 						<input type="hidden" name="bbrdNm" value="${vo.brdNm }">
 						<input type="hidden" name="bprdNm" value="${vo.prdNm }">
 						<input type="hidden" name="bprice" value="${vo.price}">

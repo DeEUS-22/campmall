@@ -3,8 +3,21 @@ package com.campmall.vo;
 public class CpmBasketVO {
 	
 	int rno;
-	String bid, bbrdNm, bprdNm, bprice, bdate, bnote, mid;
+	String bid, bbrdNm, bprdNm, bprice, bdate, bnote, mid, bfile, bsfile;
 	
+	
+	public String getBfile() {
+		return bfile;
+	}
+	public void setBfile(String bfile) {
+		this.bfile = bfile;
+	}
+	public String getBsfile() {
+		return bsfile;
+	}
+	public void setBsfile(String bsfile) {
+		this.bsfile = bsfile;
+	}
 	public String getBnote() {
 		return bnote;
 	}

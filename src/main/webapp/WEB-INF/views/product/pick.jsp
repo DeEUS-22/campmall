@@ -155,7 +155,7 @@ request.setCharacterEncoding("utf-8");
 					<c:forEach var="vo" items="${list}">
 						<li><a href="/campmall/product/product.do?pid=${vo.pid}">
 								<img
-								src="http://localhost:9000/campmall/resources/images/0240070027527.jpg"
+								src="http://localhost:9000/campmall/resources/upload/${vo.psfile }"
 								alt="#">
 								<h3>${vo.brdNm }</h3>
 								<p class="content">${vo.prdNm }</p>

@@ -136,7 +136,7 @@
 			</div> -->
 			
 			<div class="form-group">
-				<p>파일첨부</p>
+				<p>대표이미지</p>
 				<input type="file" name="file1">
 			</div>
 			
