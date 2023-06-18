@@ -93,7 +93,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="/campmall/product/detail.do?event=special&category=kithcen">
+					<a href="/campmall/product/detail.do?event=special&category=kitchen">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png" alt="#">
 						<p>키친</p>
 					</a>

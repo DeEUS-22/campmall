@@ -99,7 +99,7 @@ request.setCharacterEncoding("utf-8");
 							<p>화로ㆍBBQ</p>
 					</a></li>
 					<li><a
-						href="/campmall/product/detail.do?event=pick&category=kithcen">
+						href="/campmall/product/detail.do?event=pick&category=kitchen">
 							<img
 							src="http://localhost:9000/campmall/resources/images/main_category_icon_06.png"
 							alt="#">

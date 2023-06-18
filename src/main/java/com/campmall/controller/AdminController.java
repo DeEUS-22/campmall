@@ -182,14 +182,15 @@ public class AdminController {
 	public ModelAndView prdUpdate(CpmProductVO vo, HttpServletRequest request) throws Exception {
 		ModelAndView mv = new ModelAndView();
 		
-		//String old_filename = vo.getNsfile();	//����ȭ�鿡�� hidden���� �Ѿ���� ���� upload ������ ����� ���ϸ�
+		String old_filename = vo.getPsfile();
 		
-		//vo = fileService.update_fileCheck(vo);
+		vo = fileService.update_fileCheck(vo);
 		
 		int result = productService.getUpdate(vo);
 		
 		if(result == 1){
-			//fileService.update_filesave(vo, request, old_filename);
+			
+			fileService.update_filesave(vo, request, old_filename);
 		
 			mv.setViewName("redirect:/admin_product_list.do");
 		}else{
@@ -218,9 +219,12 @@ public class AdminController {
 	public ModelAndView prdDelete(String pid, HttpServletRequest request) throws Exception {
 		ModelAndView mv = new ModelAndView();
 		
+		CpmProductVO vo = productService.getContent(pid);
+		
 		int result = productService.getDelete(pid);
 		
 		if(result == 1) {
+			fileService.fileDelete(vo, request);
 			mv.setViewName("redirect:/admin_product_list.do");
 		}
 		

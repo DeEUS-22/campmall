@@ -47,7 +47,7 @@ public class FileServiceImpl {
 	/**
 	 * fileUpdate
 	 */
-	public CpmProductVO update_fileCheck(CpmProductVO vo, HttpServletRequest request, String old_filename) throws Exception {
+	public CpmProductVO update_fileCheck(CpmProductVO vo) throws Exception {
 		
 		if(!vo.getFile1().getOriginalFilename().equals("")) {
 			UUID uuid = UUID.randomUUID();
@@ -67,6 +67,9 @@ public class FileServiceImpl {
 		if(!vo.getFile1().getOriginalFilename().equals("")) {
 			String path = request.getSession().getServletContext().getRealPath("/");
 			path += "\\resources\\upload\\";
+			
+			File file = new File(path+vo.getPsfile());
+			vo.getFile1().transferTo(file);
 			
 			File ofile = new File(path+old_filename);
 			if(ofile.exists()) {

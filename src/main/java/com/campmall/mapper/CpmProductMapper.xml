@@ -35,7 +35,7 @@
 	
 	<!-- product update -->
 	<update id="update" parameterType="com.campmall.vo.CpmProductVO">
-		update cpm_product set category=#{category}, prdNm=#{prdNm}, brdNm=#{brdNm}, price=#{price}, dc=#{dc}, sale=#{sale}, stock=#{stock}, event=#{event} 
+		update cpm_product set category=#{category}, prdNm=#{prdNm}, brdNm=#{brdNm}, price=#{price}, dc=#{dc}, sale=#{sale}, stock=#{stock}, event=#{event}, pfile=#{pfile}, psfile=#{psfile} 
 		 where pid=#{pid}
 	</update> 
 	

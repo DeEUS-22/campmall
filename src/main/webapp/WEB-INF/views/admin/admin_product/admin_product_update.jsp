@@ -13,7 +13,7 @@
 	#upload_file {
 		/*border:1px solid red;*/
 		position:relative;
-		left:90px; top:-30px;
+		left:89px; top:-30px;
 		width:1020px;  height:32px;
 		display:inline-block;	
 		background-color:white;	
@@ -37,7 +37,7 @@
 <!-------------------->
 <section class="bg-light">
 	<div id="contents" class="container py-4">
-		<form id="prdUpdateForm" method="post" action="prdUpdate.do">
+		<form id="prdUpdateForm" method="post" action="prdUpdate.do" enctype="multipart/form-data">
 			<input type="hidden" name="pid"  value="${vo.pid}" >
 			<input type="hidden" name="pfile"  value="${vo.pfile}" >
 			<input type="hidden" name="psfile"  value="${vo.psfile}" >
