@@ -9,6 +9,22 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 <script src="http://localhost:9000/campmall/resources/js/jquery-3.6.0.min.js"></script>
 <script src="http://localhost:9000/campmall/resources/js/campmall.js"></script>
+<style>
+	#upload_file {
+		/*border:1px solid red;*/
+		position:relative;
+		left:90px; top:-30px;
+		width:1020px;  height:32px;
+		display:inline-block;	
+		background-color:white;	
+		font-size: 1rem;
+		font-weight: 400;
+		padding-left:13px;
+		padding-top: 2px;
+		border-radius: 0.25rem;
+		border:1px solid #ced4da;
+	}
+</style>
 </head>
 <body>
 <!-------------------->
@@ -23,6 +39,8 @@
 	<div id="contents" class="container py-4">
 		<form id="prdUpdateForm" method="post" action="prdUpdate.do">
 			<input type="hidden" name="pid"  value="${vo.pid}" >
+			<input type="hidden" name="pfile"  value="${vo.pfile}" >
+			<input type="hidden" name="psfile"  value="${vo.psfile}" >
 			<div class="form-group">
 				<span class="text-dark h4">상품 상세설명</span>
 			</div>
@@ -30,6 +48,7 @@
 			<div class="form-group">
 				<p>대표이미지</p>
 				<input type="file" name="file1">
+				<span id="upload_file">${vo.pfile }</span>
 			</div>
 			
 			<div class="form-group">
@@ -102,6 +121,15 @@
     var categoryValue = "${vo.category}"; // JSP에서 전달된 기존 카테고리 값
   
     $("#category").val(categoryValue); // 카테고리 값을 선택
+    
+  	//새로운 파일선택하는 이벤트 
+	$("input[type=file]").change(function(){
+		if(window.FileReader){
+			let fname = $(this)[0].files[0].name;
+			$("#upload_file").text(fname);
+		}
+	});
+    
   });
 </script>
 
