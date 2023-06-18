@@ -63,7 +63,7 @@ public class ProductController {
 	/**
 	 * new.do : 신상품
 	 */
-	@RequestMapping(value="/product/new.do", method=RequestMethod.GET)
+	@RequestMapping(value="/product/newProduct.do", method=RequestMethod.GET)
 	public ModelAndView new_product(String event) {
 		ModelAndView mv = new ModelAndView();
 		
@@ -71,7 +71,7 @@ public class ProductController {
 		
 		mv.addObject("list", list);
 		mv.addObject("newProduct", "newProduct");
-		mv.setViewName("/product/new");
+		mv.setViewName("/product/newProduct");
 		return mv;
 	}
 	
@@ -103,8 +103,18 @@ public class ProductController {
 		
 		ArrayList<CpmProductVO> list = productService.getDetailList(vo);
 		
+		
+		if("best".equals(event)) {
+			mv.setViewName("/product/best");
+		} else if ("newProduct".equals(event)) {
+			mv.setViewName("/product/newProduct");
+		} else if ("special".equals(event)) {
+			mv.setViewName("/product/special");
+		} else if ("pick".equals(event)) {
+			mv.setViewName("/product/pick");
+		}
+		
 		mv.addObject("list", list);
-		mv.setViewName("/product/new");
 		return mv;
 	}
 	

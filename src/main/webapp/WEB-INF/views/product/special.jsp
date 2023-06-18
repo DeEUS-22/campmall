@@ -57,7 +57,7 @@
 		<div class="category_inner">
 			<ul class="clearfix">
 				<li>
-					<a href="/campmall/product/detail.do?event=speical&category=vr">
+					<a href="/campmall/product/detail.do?event=special&category=vr">
 						<img src="http://localhost:9000/campmall/resources/images/main_category_icon_12.png" alt="#">
 						<p>듀랑고VR</p>
 					</a>

@@ -54,7 +54,7 @@
 			<div class="bottom_menu_inner">
 				<ul class="clearfix">
 					<li><a href="/campmall/product/best.do?event=best"> <strong>베스트</strong></a></li>
-					<li><a href="/campmall/product/new.do?event=newProduct">신상품</a></li>
+					<li><a href="/campmall/product/newProduct.do?event=newProduct">신상품</a></li>
 					<li><a href="/campmall/product/special.do?event=special">특가상품</a></li>
 					<li><a href="/campmall/product/pick.do?event=pick">추천상품</a></li>
 				</ul>
