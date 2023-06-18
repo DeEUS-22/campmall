@@ -62,6 +62,7 @@ request.setCharacterEncoding("utf-8");
 						<input type="hidden" name="bbrdNm" value="${vo.brdNm }">
 						<input type="hidden" name="bprdNm" value="${vo.prdNm }">
 						<input type="hidden" name="bprice" value="${vo.price}">
+						<input type="hidden" name="bsale" value="${vo.sale}">
 						<input type="hidden" name="pid" value="${pid }">
 						
 						

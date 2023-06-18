@@ -64,6 +64,7 @@ public class BaskertController {
 		param.put("bprdNm", vo.getBprdNm());
 		param.put("bnote", "주문번호");
 		param.put("bprice", vo.getBprice());
+		param.put("bsale", vo.getBsale());
 		param.put("pid", vo.getPid());
 
 		int result = basketService.insert(param);

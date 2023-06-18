@@ -3,9 +3,15 @@ package com.campmall.vo;
 public class CpmBasketVO {
 	
 	int rno;
-	String bid, bbrdNm, bprdNm, bprice, bdate, bnote, mid, pid, pfile, psfile;
+	String bid, bbrdNm, bprdNm, bprice, bsale, bdate, bnote, mid, pid, pfile, psfile;
 	
 	
+	public String getBsale() {
+		return bsale;
+	}
+	public void setBsale(String bsale) {
+		this.bsale = bsale;
+	}
 	public String getPfile() {
 		return pfile;
 	}

@@ -86,7 +86,7 @@
 									src="http://localhost:9000/campmall/resources/upload/${vo.psfile }"
 									alt="#"></td>
 								<td class="left"><a href="#">[${vo.bbrdNm }] ${vo.bprdNm }</a></td>
-								<td><strong>${vo.bprice }원</strong></td>
+								<td><strong>${vo.bsale }원</strong></td>
 								<td><a href="/campmall/basketDelete.do?bid=${vo.bid }" class="btn_cancel">삭제</a></td>
 							</tr>
 						</c:forEach>
