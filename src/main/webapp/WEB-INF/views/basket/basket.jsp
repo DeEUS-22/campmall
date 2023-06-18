@@ -87,14 +87,14 @@
 									alt="#"></td>
 								<td class="left"><a href="#">[${vo.bbrdNm }] ${vo.bprdNm }</a></td>
 								<td><strong>${vo.bprice }원</strong></td>
-								<td><a href="#" class="btn_cancel">삭제</a></td>
+								<td><a href="/campmall/basketDelete.do?bid=${vo.bid }" class="btn_cancel">삭제</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
 					<tfoot>
 						<tr>
 							<td colspan="5"><strong>총 결제 금액: <span
-									class="price">100,000원</span></strong></td>
+									class="price">${totalPrice }원</span></strong></td>
 						</tr>
 					</tfoot>
 				</table>

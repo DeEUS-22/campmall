@@ -15,4 +15,9 @@
 	<select id="getList" parameterType="java.lang.String" resultType="com.campmall.vo.CpmBasketVO">
 		select rownum rno, bid, bbrdnm, bprdnm, bprice, bnote, bdate, mid from cpm_basket where mid=#{mid}
 	</select>
+	
+	<!-- basket delete -->
+	<delete id="delete" parameterType="hashMap">
+		delete from cpm_basket where bid=#{bid} and mid=#{mid}
+	</delete>
 </mapper>

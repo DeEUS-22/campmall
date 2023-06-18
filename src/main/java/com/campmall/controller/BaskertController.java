@@ -34,7 +34,13 @@ public class BaskertController {
 		
 		ArrayList<CpmBasketVO> list = basketService.getList(mid);
 		
+		int totalPrice = 0;
 		
+		for(int i=0; i<list.size(); i++) {
+			totalPrice += Integer.parseInt(list.get(i).getBprice());
+		}
+		
+		mv.addObject("totalPrice", totalPrice);
 		mv.addObject("list", list);
 		mv.setViewName("/basket/basket");
 		return mv;
@@ -58,6 +64,27 @@ public class BaskertController {
 		param.put("bprice", vo.getBprice());
 
 		int result = basketService.insert(param);
+		
+		
+		mv.setViewName("redirect:/basket.do");
+		return mv;
+	}
+	
+	/**
+	 * basketDelete.do
+	 */
+	@RequestMapping(value="/basketDelete.do", method=RequestMethod.GET)
+	public ModelAndView basketDelete(String bid, HttpSession session) {
+		ModelAndView mv = new ModelAndView();
+		
+		SessionVO svo = (SessionVO)session.getAttribute("svo");
+		
+		Map<String, Object> param = new HashMap<String, Object>();
+		
+		param.put("bid", bid);
+		param.put("mid", svo.getMid());
+		
+		int result = basketService.delete(param);
 		
 		
 		mv.setViewName("redirect:/basket.do");

@@ -26,4 +26,10 @@ public class BasketServiceImpl implements BasketService {
 		
 		return cpmBasketDao.getList(mid);
 	}
+	
+	@Override
+	public int delete(Map<String, Object> param) {
+		
+		return cpmBasketDao.delete(param);
+	}
 }

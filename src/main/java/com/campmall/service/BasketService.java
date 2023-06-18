@@ -9,5 +9,6 @@ public interface BasketService {
 	
 	int insert(Map<String, Object> param);
 	ArrayList<CpmBasketVO> getList(String mid);
+	int delete(Map<String, Object> param);
 	
 }

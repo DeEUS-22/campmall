@@ -32,4 +32,11 @@ public class CpmBasketDAO {
 		
 		return (ArrayList<CpmBasketVO>)list;
 	}
+	
+	/**
+	 * delete
+	 */
+	public int delete(Map<String, Object> param) {
+		return sqlSession.delete("mapper.basket.delete", param);
+	}
 }
