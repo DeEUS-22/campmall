@@ -83,7 +83,7 @@
 							<tr>
 								<td>${vo.rno }</td>
 								<td class="td_img"><img
-									src="http://localhost:9000/campmall/resources/images/0240070027527.jpg"
+									src="http://localhost:9000/campmall/resources/upload/${vo.psfile }"
 									alt="#"></td>
 								<td class="left"><a href="#">[${vo.bbrdNm }] ${vo.bprdNm }</a></td>
 								<td><strong>${vo.bprice }원</strong></td>

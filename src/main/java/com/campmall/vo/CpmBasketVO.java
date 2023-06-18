@@ -3,20 +3,26 @@ package com.campmall.vo;
 public class CpmBasketVO {
 	
 	int rno;
-	String bid, bbrdNm, bprdNm, bprice, bdate, bnote, mid, bfile, bsfile;
+	String bid, bbrdNm, bprdNm, bprice, bdate, bnote, mid, pid, pfile, psfile;
 	
 	
-	public String getBfile() {
-		return bfile;
+	public String getPfile() {
+		return pfile;
 	}
-	public void setBfile(String bfile) {
-		this.bfile = bfile;
+	public void setPfile(String pfile) {
+		this.pfile = pfile;
 	}
-	public String getBsfile() {
-		return bsfile;
+	public String getPsfile() {
+		return psfile;
 	}
-	public void setBsfile(String bsfile) {
-		this.bsfile = bsfile;
+	public void setPsfile(String psfile) {
+		this.psfile = psfile;
+	}
+	public String getPid() {
+		return pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
 	}
 	public String getBnote() {
 		return bnote;
