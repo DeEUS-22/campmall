@@ -107,4 +107,12 @@
 <!-------------------->
 <jsp:include page="../../footer.jsp"></jsp:include>
 </body>
+<script>
+  $(document).ready(function() {
+    var categoryValue = "${vo.category}"; // JSP에서 전달된 기존 카테고리 값
+  
+    $("#category").val(categoryValue); // 카테고리 값을 선택
+  });
+</script>
+
 </html>
